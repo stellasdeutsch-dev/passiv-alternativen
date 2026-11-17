@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Альтернативы пассиву в немецком: sich lassen, sein + zu, -bar и man. Гайд Stellas для уровня B2.">
+<meta property="og:title" content="Пассив без werden">
+<meta property="og:description" content="Альтернативы пассиву в немецком: sich lassen, sein + zu, -bar и man. Гайд Stellas для уровня B2.">
+<meta name="theme-color" content="#E4E4E1">
+<link rel="icon" href="../media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Пассив без werden</title>
+<link rel="preload" href="../assets/fonts/rubik-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/bagelfatone-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Bagel Fat One';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/bagelfatone-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:800 900;font-display:swap;src:url(../assets/fonts/rubik-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Rubik';font-style:normal;font-weight:800 900;font-display:swap;src:url(../assets/fonts/rubik-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<script defer src="../assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  color-scheme: light;
+  --paper:#E4E4E1; --paper-2:#D8D8D4; --card:#F1F1EE;
+  --ink:#0B0B0B; --ink-2:#34342F; --mute:#6E6E68; --line:rgba(11,11,11,.2);
+  --violet:#7700FF; --pink:#FA0586; --sun:#FF6040; --gold:#FFB300; --noon:#FFE81A;
+  --deep:#00BDFF; --glass:#BED147; --lime:#78F004; --burst:#C6F53C; --teal:#16C6CC;
+  --f-display:"Rubik","Arial Black",system-ui,sans-serif;
+  --f-bubble:"Bagel Fat One","Rubik","Arial Black",system-ui,sans-serif;
+  --f-body:"Onest","Helvetica Neue",Arial,system-ui,sans-serif;
+  --gut:16px;
+}
+@media (min-width:760px){:root{--gut:32px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--f-body);-webkit-font-smoothing:antialiased;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+main{overflow-x:clip;position:relative}
+p,li,dd,span{text-wrap:pretty}
+img,video{max-width:100%;display:block}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px}
+.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-.14em}
+
+.shade{position:fixed;inset:-10%;pointer-events:none;z-index:0;opacity:.55}
+.shade i{position:absolute;border-radius:50%;background:rgba(40,40,30,.16);filter:blur(38px);will-change:transform}
+@media (min-width:900px) and (hover:hover){.shade i{animation:sway 14s ease-in-out infinite alternate}}
+.shade i:nth-child(1){width:70vw;height:14vw;left:-10vw;top:12vh;transform:rotate(-24deg)}
+.shade i:nth-child(2){width:60vw;height:10vw;right:-12vw;top:48vh;transform:rotate(-32deg);animation-duration:18s}
+.shade i:nth-child(3){width:44vw;height:9vw;left:20vw;top:80vh;transform:rotate(-18deg);animation-duration:16s}
+@keyframes sway{to{translate:4vw 2vh;rotate:6deg}}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.22;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.wrap{position:relative;z-index:1;max-width:1180px;margin-inline:auto;padding-inline:var(--gut)}
+section{position:relative;z-index:1;padding-block:56px;scroll-margin-top:58px}
+@media (min-width:760px){section{padding-block:88px}}
+
+.mega{font:900 clamp(30px,8.6vw,96px)/.98 var(--f-display);text-transform:none;letter-spacing:-.02em;margin:0;text-wrap:balance;hyphens:auto}
+.mega.s{font-size:clamp(28px,7.6vw,72px)}
+.mega.xs{font-size:clamp(26px,6.8vw,48px);margin-top:48px}
+.mega .wd{display:inline-block}
+.hl{display:inline-block;padding:.02em .14em .08em;margin-block:.04em;transform:rotate(-1.6deg);color:#fff;background:var(--violet)}
+.hl.pink{background:var(--pink)}.hl.lime{background:var(--lime);color:var(--ink)}.hl.noon{background:var(--noon);color:var(--ink)}
+.hl.teal{background:var(--teal)}.hl.sun{background:var(--sun)}.hl.ink{background:var(--ink)}.hl.deep{background:var(--deep);color:var(--ink)}
+.lede{font:300 clamp(19px,4.6vw,26px)/1.32 var(--f-body);color:var(--ink-2);max-width:30ch;margin:22px 0 0;letter-spacing:-.01em}
+.lede.w{max-width:44ch}
+.de{font-weight:600;color:var(--ink)}
+.bub{font-family:var(--f-bubble);font-weight:400;letter-spacing:-.01em}
+.lbl{display:flex;align-items:center;gap:8px;margin:0 0 14px;font:600 13px/1.3 var(--f-body);color:var(--mute)}
+.lbl .ic{font-size:16px}
+
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;border:1.5px solid currentColor;font:700 12px/1.2 var(--f-body);letter-spacing:.04em;white-space:nowrap;background:transparent}
+.pill.solid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pill.lime{background:var(--burst);color:var(--ink);border-color:var(--burst)}
+.pill.pink{background:var(--pink);color:#fff;border-color:var(--pink)}
+.pill.solid::before{content:"★";font-size:11px}
+.pill.noicon::before{content:none}
+a.pill,button.pill{transition:background .2s,color .2s,translate .2s;cursor:pointer}
+a.pill:hover,button.pill:hover{background:var(--ink);color:#fff;border-color:var(--ink);translate:0 -2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;border:0;background:var(--ink);color:#fff;font:800 16px/1 var(--f-display);letter-spacing:.01em;transition:translate .2s,rotate .2s,box-shadow .2s}
+.btn:hover{translate:0 -2px;rotate:-1deg;box-shadow:0 8px 0 -2px var(--burst)}
+.btn.lime{background:var(--burst);color:var(--ink)}
+.btn.lime:hover{box-shadow:0 8px 0 -2px #fff}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.ghost.wh{color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.btn.ghost.wh:hover{background:#fff;color:var(--ink)}
+.btn.big{padding:20px 30px;font-size:17px}
+
+.burst{display:inline-block;width:1em;height:1em;vertical-align:-.12em;fill:var(--burst);stroke:var(--burst);stroke-width:7;stroke-linejoin:round;aspect-ratio:1}
+.band.lime .burst{fill:var(--ink);stroke:var(--ink)}
+.spin{animation:spin 9s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+
+.say{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;border:0;background:var(--ink);color:#fff;flex:none;vertical-align:middle;transition:scale .15s,background .2s}
+.say:hover{scale:1.12;background:var(--violet)}
+.say svg{width:13px;height:13px}
+.say.on{background:var(--violet);animation:pulse .6s ease infinite alternate}
+@keyframes pulse{to{scale:1.15}}
+.no-tts .say{display:none}
+
+/* hover lift for cards (uses translate, never transform: GSAP owns transform) */
+.hov{transition:translate .25s cubic-bezier(.3,1.4,.5,1),box-shadow .25s,background .25s}
+.hov:hover{translate:0 -4px;box-shadow:6px 6px 0 var(--ink)}
+
+.rv.in{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}}
+.stg.in>*{animation:pop .6s cubic-bezier(.3,1.4,.5,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.94)}}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(228,228,225,.97);border-bottom:1px solid var(--line)}
+@media (min-width:900px){.topbar{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(228,228,225,.8)}}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;transition:rotate .2s}
+.brand:hover{rotate:-3deg}
+.brand img{width:30px;height:30px}
+.brand b{font:400 22px/1 var(--f-bubble)}
+.topbar .pill{font-size:12px}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--violet);transform-origin:left;transform:scaleX(0)}
+
+/* HERO */
+.hero{padding-top:28px;padding-bottom:40px}
+.hero-grid{display:grid;gap:24px}
+.hero-grid>div:last-child{position:relative;z-index:2}
+.mark{position:relative;margin-top:6px;padding-block:44px 48px}
+.mark .sun{position:absolute;right:-4%;top:6px;width:min(46%,250px);aspect-ratio:1;border-radius:50%;background:var(--noon);z-index:0;animation:sunin 1.2s cubic-bezier(.3,1.5,.5,1) both}
+@keyframes sunin{from{transform:scale(.6) rotate(-50deg)}}
+.word{position:relative;z-index:1;font:400 clamp(76px,25vw,200px)/.84 var(--f-bubble);letter-spacing:-.03em;margin:0;display:flex}
+.word span{display:inline-block;animation:drop 1s cubic-bezier(.3,1.6,.5,1) both}
+.word span:nth-child(2){animation-delay:.08s}.word span:nth-child(3){animation-delay:.16s}.word span:nth-child(4){animation-delay:.24s}.word span:nth-child(5){animation-delay:.32s}.word span:nth-child(6){animation-delay:.4s}
+.word span:nth-child(even){translate:0 .05em}
+.word .cross{position:absolute;left:-2%;right:4%;top:52%;height:.09em;background:var(--pink);rotate:-6deg;transform-origin:left;animation:strike .6s 1.1s cubic-bezier(.6,0,.2,1) both}
+@keyframes strike{from{transform:scaleX(0)}}
+@keyframes drop{from{transform:translateY(-.5em) rotate(-12deg) scale(.7)}}
+.sticker .pill{animation:stk .7s .5s cubic-bezier(.3,1.8,.5,1) both}
+@keyframes stk{from{transform:scale(.2) rotate(30deg)}}
+.mark .b1{position:absolute;z-index:2;width:min(14%,76px);height:auto;right:1%;top:0}
+.sticker{position:absolute;z-index:3;animation:float 5s ease-in-out infinite alternate}
+.sticker.a{left:0;bottom:4px;rotate:-6deg}
+.sticker.b{right:0;bottom:0;rotate:4deg;animation-delay:-2s}
+.sticker.c{left:26%;top:2px;rotate:-4deg;animation-delay:-1s}
+@keyframes float{to{translate:0 -10px}}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin-top:28px}
+.meta div{border-top:1px solid var(--line);padding:10px 0 14px}
+.meta small{display:flex;align-items:center;gap:6px;font:600 12px/1.2 var(--f-body);color:var(--mute)}
+.meta b{font:600 17px/1.3 var(--f-body)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;align-items:end}.meta{grid-template-columns:repeat(4,1fr)}}
+
+/* IG cards: stacked on phones, three in a row from tablet, never sideways scroll */
+.feed{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
+@media (min-width:760px){.feed{grid-template-columns:repeat(3,1fr)}}
+.ig{background:#0C0C0C;color:#fff;border-radius:20px;border:1px solid #2A2A2A;overflow:hidden;display:flex;flex-direction:column}
+.ig-h{display:flex;align-items:center;gap:10px;padding:12px 14px;font:600 14px var(--f-body)}
+.ig-h .av{width:30px;height:30px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.ig-h .av .burst{width:22px;height:22px}
+.poster{aspect-ratio:5/4;position:relative;display:flex;flex-direction:column;justify-content:center;padding:22px;overflow:hidden}
+@media (min-width:760px){.poster{aspect-ratio:1}}
+.poster h3{margin:0;font:900 clamp(28px,7.6vw,36px)/.98 var(--f-display);letter-spacing:-.02em;position:relative;z-index:1}
+.poster.p1{background:#101010}
+.poster.p1 .burst{position:absolute;width:38%;height:auto;left:31%;top:8%}
+.poster.p1 h3{margin-top:auto;text-align:center}
+.poster.p2{background:var(--pink)}
+.poster.p2 .big-ic{position:absolute;right:-8%;top:-8%;font-size:170px;color:rgba(0,0,0,.16);stroke-width:1.5}
+.poster.p3{background:var(--violet);align-items:flex-start}
+.poster.p3 .bub{font-size:clamp(46px,13vw,64px);line-height:.88;color:#fff;position:relative;z-index:1}
+.poster.p3 .big-ic{position:absolute;right:6%;bottom:18%;font-size:86px;color:var(--burst)}
+.poster .pill{position:relative;z-index:1}
+.ig-a{display:flex;gap:16px;padding:12px 14px 4px;font-size:22px}
+.ig-a .sp{flex:1}
+.ig-a .ic.liked{color:var(--pink);fill:var(--pink)}
+.ig p{margin:0;padding:4px 14px 16px;font:400 15px/1.5 var(--f-body)}
+.ig p b,.ig .tag{font-weight:600}
+.ig.hov:hover{box-shadow:6px 6px 0 var(--burst)}
+
+/* marquee */
+.band-wrap{position:relative;z-index:2;overflow:hidden;padding-block:34px}
+.band{background:var(--ink);color:#fff;transform:rotate(-3.5deg);width:112%;margin-left:-6%;padding-block:14px}
+.band.lime{background:var(--burst);color:var(--ink);transform:rotate(2.5deg)}
+.track{display:flex;width:max-content;animation:slide 26s linear infinite}
+.band.lime .track{animation-direction:reverse}
+.gs .track{animation:none}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px;font:800 clamp(18px,4.8vw,30px)/1 var(--f-display);letter-spacing:.01em;white-space:nowrap}
+.track .bub{font-size:1.3em;font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ROUTE map: wraps into rows on phones */
+.route{padding-block:18px 40px}
+.rt{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 8px;padding-top:4px}
+@media (min-width:760px){.rt{grid-template-columns:repeat(9,1fr);gap:6px}}
+.rt-line{display:none}
+@media (min-width:760px){.rt-line{display:block;position:absolute;left:5.5%;right:5.5%;top:32px;height:0;border-top:4px dotted var(--ink);z-index:0}}
+.rt-fill{position:absolute;left:0;right:0;top:-4px;height:4px;background:var(--violet);border-radius:2px;transform-origin:left;transform:scaleX(1)}
+.gs .rt-fill{transform:scaleX(0)}
+.stop{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:4px 2px;border-radius:14px;transition:background .2s}
+.stop:hover{background:var(--card)}
+.stop .dot{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:24px;box-shadow:0 0 0 4px var(--paper);transition:scale .25s cubic-bezier(.3,1.6,.5,1),rotate .25s}
+.stop:hover .dot{scale:1.12;rotate:-8deg}
+.stop b{font:600 11px/1 var(--f-body);letter-spacing:.1em;color:var(--mute)}
+.stop span{font:700 13px/1.2 var(--f-body)}
+
+/* FACTORY (vertical on phones) */
+.fab{margin-top:30px;background:var(--ink);color:#fff;padding:18px 14px;display:grid;gap:12px}
+@media (min-width:760px){.fab{padding:28px;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}}
+.fab .lbl{grid-column:1/-1;color:#9a9a92;margin:0}
+.fcol{display:grid;gap:8px}
+.fc{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;font:500 15px/1.3 var(--f-body);background:#1d1d1d;transition:translate .6s cubic-bezier(.6,0,.2,1),scale .6s,opacity .5s,background .3s,box-shadow .3s}
+.fc b{font-weight:800;color:#FF9A80}
+.fin .fc b{color:#FF7DBE;text-decoration:line-through;text-decoration-thickness:2px}
+.fout .fc b{color:var(--burst)}
+.fc .lt{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:400 15px/1 var(--f-bubble);color:#fff}
+.fin .fc.go{translate:0 30%;scale:.92;opacity:.25}
+@media (min-width:760px){.fin .fc.go{translate:30% 0}}
+.fout .fc{opacity:.22;translate:0 -20%;scale:.94}
+@media (min-width:760px){.fout .fc{translate:-20% 0}}
+.fout .fc.on{opacity:1;translate:0 0;scale:1;background:#262626;box-shadow:inset 0 0 0 1.5px var(--burst)}
+.mach{height:62px;border-radius:18px;background:var(--burst);color:var(--ink);display:flex;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden}
+@media (min-width:760px){.mach{width:120px;height:120px;flex-direction:column;gap:4px}}
+.mach b{font:900 17px/1 var(--f-display);position:relative;z-index:1}
+.mach .ic{font-size:22px;position:relative;z-index:1}
+.mach .burst{position:absolute;width:80px;height:80px;fill:rgba(0,0,0,.1);stroke:rgba(0,0,0,.1);animation:spin 3s linear infinite}
+.mach.work{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+
+/* mnemonic */
+.mnemo{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:30px}
+.mnemo .L{font:400 clamp(56px,15vw,92px)/1 var(--f-bubble);display:inline-grid;place-items:center;width:1.1em;height:1.1em;color:#fff;border-radius:50%;padding-top:.06em}
+.mnemo .L:nth-child(1){background:var(--violet)}.mnemo .L:nth-child(2){background:var(--sun)}.mnemo .L:nth-child(3){background:var(--deep)}.mnemo .L:nth-child(4){background:var(--pink)}
+.mnemo p{flex-basis:100%;margin:6px 0 0;font:500 17px/1.45 var(--f-body);max-width:52ch}
+
+/* TRAITS */
+.split{display:grid;gap:26px}
+@media (min-width:900px){.split{grid-template-columns:1fr 1.15fr;align-items:start;gap:48px}}
+.traits{margin-top:8px;border-top:1px solid var(--line)}
+.trait{display:grid;grid-template-columns:46px 1fr auto;gap:4px 14px;padding:16px 10px;margin-inline:-10px;border-bottom:1px solid var(--line);align-items:start;border-radius:14px;transition:background .2s}
+.trait:hover{background:var(--card)}
+.trait .ti{grid-row:1/span 3;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:22px;color:#fff}
+.trait h4{margin:0;font:600 clamp(22px,5.4vw,28px)/1.1 var(--f-body);letter-spacing:-.01em;grid-column:2}
+.trait h4 small{display:block;font:500 14px/1.3 var(--f-body);color:var(--violet);margin-top:4px}
+.trait .n{font:500 12px/1 var(--f-body);color:var(--mute);padding-top:6px;grid-column:3;grid-row:1}
+.trait p{grid-column:2/-1;margin:0;color:var(--ink-2);font-size:15.5px}
+.trait .ex{grid-column:2/-1;display:flex;align-items:center;gap:10px;font-size:15px}
+.trait .ex span{color:var(--mute)}
+
+/* PANELS (grid, never sideways) */
+.panels{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
+@media (min-width:760px){.panels{grid-template-columns:1fr 1fr}}
+.panel{color:#fff;padding:22px 20px 18px;position:relative;overflow:hidden}
+.panel.hov:hover{box-shadow:6px 6px 0 var(--ink)}
+.panel.v{background:var(--violet)}.panel.s{background:var(--sun)}.panel.d{background:var(--deep)}.panel.p{background:var(--pink)}
+.panel.g{background:var(--glass);color:var(--ink)}.panel.o{background:var(--gold);color:var(--ink)}
+.panel .ghost{position:absolute;right:-4%;top:-6%;font:400 clamp(110px,30vw,170px)/.8 var(--f-bubble);color:rgba(255,255,255,.16);pointer-events:none}
+.panel.g .ghost,.panel.o .ghost{color:rgba(0,0,0,.1)}
+.panel .who{position:absolute;right:18px;top:18px;font-size:40px;opacity:.9}
+.casepill{font:700 12px/1 var(--f-body);letter-spacing:.06em;background:rgba(0,0,0,.22);padding:6px 10px;border-radius:999px;display:inline-block}
+.panel.g .casepill,.panel.o .casepill{background:rgba(0,0,0,.12)}
+.morph{font:900 clamp(34px,10.5vw,64px)/1 var(--f-display);letter-spacing:-.02em;display:flex;flex-wrap:wrap;align-items:center;position:relative;margin:10px 0 0;perspective:400px;min-height:1.1em}
+@media (min-width:760px){.morph{font-size:clamp(34px,4.6vw,60px)}}
+.fl{display:inline-grid}
+.fl i{grid-area:1/1;justify-self:start;white-space:pre;font-style:normal;transition:transform .55s cubic-bezier(.5,0,.2,1),opacity .45s;backface-visibility:hidden}
+.fl .fb{opacity:0;transform:rotateX(90deg) translateY(30%)}
+.flip.to .fl .fa{opacity:0;transform:rotateX(-90deg) translateY(-30%)}
+.flip.to .fl .fb{opacity:1;transform:none;color:var(--burst)}
+.panel.g .flip.to .fl .fb,.panel.o .flip.to .fl .fb{color:var(--violet)}
+.panel .pills{margin-top:14px}
+.panel .pill{color:inherit}
+.spec{margin:18px 0 0;border-top:1px solid rgba(255,255,255,.55)}
+.panel.g .spec,.panel.o .spec{border-color:rgba(0,0,0,.3)}
+.spec div{display:grid;grid-template-columns:112px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.55);align-items:baseline}
+.panel.g .spec div,.panel.o .spec div{border-color:rgba(0,0,0,.3)}
+.spec dt{font:500 15px/1.25 var(--f-body)}
+.spec dd{margin:0;font:400 14px/1.45 var(--f-body)}
+.spec dd b{font-weight:700}
+.panel .note{margin:14px 0 0;font:500 14px/1.45 var(--f-body);background:rgba(0,0,0,.18);padding:10px 12px;display:flex;gap:8px}
+.panel.g .note,.panel.o .note{background:rgba(0,0,0,.1)}
+.panel .note .ic{font-size:18px;margin-top:2px}
+
+/* STEPPER (Perfekt) */
+.scene{margin-top:30px;background:var(--card);border:1.5px solid var(--ink);padding:18px}
+@media (min-width:760px){.scene{padding:28px}}
+.scene-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.scene-top .lbl{margin:0}
+.pk{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:22px;min-height:110px;font:700 clamp(22px,6.2vw,40px)/1.1 var(--f-body)}
+.tile{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;padding:10px 14px;border-radius:14px;background:var(--paper-2)}
+.tile em{font:700 10px/1 var(--f-body);font-style:normal;letter-spacing:.08em;padding:4px 7px;border-radius:999px;background:var(--ink);color:#fff}
+.tile.v{background:var(--ink);color:#fff}.tile.v em{background:var(--burst);color:var(--ink)}
+.tile.inf{background:var(--violet);color:#fff}.tile.inf em{background:#fff;color:var(--violet)}
+.tile[hidden]{display:none}
+.tile .ge{display:inline-block;max-width:1.6em;overflow:hidden;vertical-align:bottom;transition:max-width .6s cubic-bezier(.6,0,.2,1),opacity .4s,color .3s}
+.tile.warn{background:var(--pink);color:#fff}
+.tile.warn .ge{text-decoration:line-through;text-decoration-thickness:4px;color:var(--noon)}
+.tile.cut .ge{max-width:0;opacity:0}
+.tile.ok{background:var(--burst);color:var(--ink)}
+.tile.ok em{background:var(--ink);color:#fff}
+.cap{min-height:4.8em;margin:18px 0 0;font:400 16px/1.5 var(--f-body);max-width:58ch}
+.ctrl{display:flex;align-items:center;gap:10px;margin-top:14px;flex-wrap:wrap}
+.ctrl .nav{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;font-size:18px;display:grid;place-items:center;transition:background .2s,color .2s}
+.ctrl .nav:hover{background:var(--ink);color:#fff}
+.dots{display:flex;gap:6px;flex:1;min-width:90px}
+.dots i{height:5px;flex:1;background:var(--line);border-radius:3px;transition:background .3s}
+.dots i.on{background:var(--ink)}
+
+/* FLOW */
+.flow{margin-top:28px;background:var(--card);padding:18px 14px;position:relative}
+@media (min-width:760px){.flow{padding:26px}}
+.flow.dk{background:var(--ink);color:#fff}
+.flow.dk .lbl{color:#9a9a92}
+.fchip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.fq{font:700 clamp(18px,5vw,24px)/1.25 var(--f-body);background:var(--noon);color:var(--ink);padding:8px 14px;border-radius:12px;display:inline-block}
+.fans{font:800 clamp(16px,4.4vw,20px)/1.2 var(--f-display);color:var(--violet);opacity:0;translate:-10px 0;transition:opacity .4s,translate .4s}
+.flow.dk .fans{color:var(--burst)}
+.fans.on{opacity:1;translate:0 0}
+.fn{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}
+.fqq{border:1.5px solid currentColor;border-radius:14px;padding:10px 12px;font:600 14px/1.35 var(--f-body);display:flex;gap:8px;align-items:center;opacity:.45;transition:opacity .3s,background .3s,transform .3s}
+.fqq .ic{font-size:18px}
+.fy{display:flex;align-items:center;gap:6px;opacity:.28;transition:opacity .3s}
+.fy em{font:700 12px/1 var(--f-body);font-style:normal;display:flex;align-items:center;gap:3px}
+.res{font:900 14px/1.1 var(--f-display);padding:8px 10px;border-radius:10px;background:var(--violet);color:#fff;text-align:center;max-width:150px;transition:scale .4s cubic-bezier(.3,1.7,.5,1),rotate .4s}
+.res.lime{background:var(--burst);color:var(--ink)}
+.res.sun{background:var(--sun)}
+.res.gray{background:var(--mute)}
+.fno{display:flex;align-items:center;gap:6px;height:30px;padding-left:22px;font:700 12px/1 var(--f-body);opacity:.25;transition:opacity .3s}
+.fno::before{content:"";width:2px;height:100%;background:currentColor}
+.fn.chk .fqq{opacity:1;transform:scale(1.02)}
+.fn.miss .fqq{opacity:.55;transform:none}
+.fn.hit .fqq{opacity:1;background:var(--noon);color:var(--ink);border-color:var(--noon)}
+.fn.hit .fy{opacity:1}
+.fn.hit .res{scale:1.12;rotate:-3deg}
+.fno.on{opacity:1}
+.fn.else{grid-template-columns:auto}
+.fn.else .res{max-width:none;opacity:.35}
+.fn.else.hit .res{opacity:1}
+
+/* bad vs good */
+.cold{display:grid;gap:12px;margin-top:22px}
+@media (min-width:760px){.cold{grid-template-columns:1fr 1fr}}
+.cold>div{padding:18px;position:relative;overflow:hidden}
+.cold .bad{background:var(--card)}
+.cold .good{background:var(--deep);color:var(--ink)}
+.cold .bigi{position:absolute;right:12px;top:12px;font-size:40px;opacity:.9}
+.cold .bad .bigi{color:var(--pink)}
+.cold .pill{white-space:normal}
+.cold b{font:900 clamp(24px,6.6vw,36px)/1.05 var(--f-display);display:block;margin:6px 48px 10px 0;position:relative}
+.cold .bad b{text-decoration:line-through;text-decoration-color:var(--pink);text-decoration-thickness:5px}
+.cold p{margin:0;position:relative}
+
+/* tips (no side stripes) */
+.tips{display:grid;gap:12px;margin-top:26px}
+@media (min-width:760px){.tips{grid-template-columns:1fr 1fr}}
+.tip{background:var(--card);padding:16px 18px}
+.tip p{margin:0}
+.tip .th{display:flex;align-items:center;gap:10px;font-weight:700;margin-bottom:6px}
+.tip .th .ti2{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;color:#fff;font-size:17px;flex:none}
+.tip .line{display:flex;align-items:center;gap:10px;margin-top:10px}
+
+/* zu insertion */
+.ins{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}
+@media (min-width:760px){.ins{grid-template-columns:repeat(3,1fr)}}
+.insc{background:var(--ink);color:#fff;padding:16px 16px 14px;display:grid;gap:8px}
+.insc .w3{font:800 clamp(24px,6.8vw,32px)/1 var(--f-display);display:flex;align-items:baseline}
+.insc .z{display:inline-block;color:var(--burst);max-width:0;overflow:hidden;opacity:0;animation:zin 4s ease-in-out infinite;vertical-align:bottom}
+.insc:nth-child(2) .z{animation-delay:.6s}.insc:nth-child(3) .z{animation-delay:1.2s}
+@keyframes zin{0%,20%{max-width:0;opacity:0}35%,85%{max-width:1.4em;opacity:1}100%{max-width:0;opacity:0}}
+.insc small{font:500 13px/1.3 var(--f-body);color:#bdbdb4}
+
+/* builder */
+.build{margin-top:24px;background:var(--ink);color:#fff;padding:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 10px;font:800 clamp(22px,6.4vw,38px)/1 var(--f-display)}
+.build .bu{padding:8px 10px;border-radius:12px;background:var(--pink);display:inline-block;transition:opacity .3s}
+.build .bu.off{opacity:.18;background:#222}
+.build .bb{background:#222;padding:8px 12px;border-radius:12px;display:inline-block}
+.build .be{padding:8px 12px;border-radius:12px;background:var(--deep);color:var(--ink);display:inline-block}
+.build .be.l{background:var(--glass)}.build .be.a{background:var(--gold)}
+.build .bp{color:#777}
+.build .br{font:400 1.1em/1 var(--f-bubble);color:var(--burst)}
+.build .bg{flex-basis:100%;font:500 15px/1.3 var(--f-body);color:#bdbdb4;display:flex;gap:8px;align-items:center}
+
+/* twins */
+.twins{display:grid;grid-template-columns:1fr;gap:12px;margin-top:24px}
+@media (min-width:760px){.twins{grid-template-columns:repeat(3,1fr)}}
+.twin{background:var(--card);padding:18px;display:grid;gap:10px;align-content:start}
+.twin .tw{font:900 clamp(24px,6.6vw,34px)/1.05 var(--f-display);display:flex;flex-wrap:wrap}
+.twin .tw .flip.to .fl .fb{color:var(--pink)}
+.twin .tag3{display:inline-flex;align-self:start;justify-self:start;font:700 12px/1 var(--f-body);padding:6px 10px;border-radius:999px;background:var(--deep);color:var(--ink);transition:background .3s,color .3s}
+.twin.to .tag3{background:var(--pink);color:#fff}
+.twin .rb,.twin.to .ra{display:none}
+.twin.to .rb{display:block}
+.twin p{margin:0;color:var(--ink-2)}
+
+/* lanes */
+.lanes{display:grid;gap:10px;margin-top:26px}
+@media (min-width:760px){.lanes{grid-template-columns:1fr 1fr}}
+.lane{background:var(--card);padding:16px 18px;display:grid;gap:12px}
+.lane.dk{background:var(--ink);color:#fff}
+.lane .lh{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lane .lflag{font:800 13px/1 var(--f-display);padding:6px 9px;border-radius:6px;background:var(--ink);color:#fff}
+.lane.dk .lflag{background:var(--burst);color:var(--ink)}
+.lane .big{font:700 clamp(22px,6vw,32px)/1.2 var(--f-body);display:flex;align-items:baseline;gap:.28em;flex-wrap:wrap}
+.lane .big .flip{font-weight:800}
+.lane.dk .flip.to .fl .fb{color:var(--burst)}
+.lane .big .su{background:var(--violet);color:#fff;padding:0 6px}
+.lane small{font:500 14px/1.35 var(--f-body);color:var(--mute);display:flex;align-items:center;gap:6px}
+.lane.dk small{color:#bdbdb4}
+
+.exl{margin-top:22px;border-top:1px solid var(--line)}
+.exl .row{display:flex;align-items:center;gap:12px;padding:12px 10px;margin-inline:-10px;border-bottom:1px solid var(--line);border-radius:12px;transition:background .2s}
+.exl .row:hover{background:var(--card)}
+.exl .row div{flex:1}
+.exl .row b{font:600 17px/1.35 var(--f-body);display:block}
+.exl .row span{font-size:14.5px;color:var(--mute)}
+
+/* CONVERTER */
+.conv{margin-top:28px;background:var(--ink);color:#fff;padding:18px}
+@media (min-width:760px){.conv{padding:30px}}
+.cv-bar{display:grid;gap:12px}
+.cv-bar .lbl{color:#9a9a92;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1.5px solid #444;background:transparent;color:#ddd;padding:9px 14px;border-radius:999px;font:700 14px/1 var(--f-body);transition:background .2s,border-color .2s,color .2s}
+.chips button:hover{border-color:#fff;color:#fff}
+.chips button[aria-pressed="true"]{background:#fff;color:var(--ink);border-color:#fff}
+.toggle{display:flex;flex-wrap:wrap;gap:6px;background:#1c1c1c;border-radius:18px;padding:5px}
+.toggle button{border:0;background:transparent;color:#bbb;padding:11px 14px;border-radius:999px;font:700 14px/1 var(--f-body);display:inline-flex;align-items:center;gap:6px;transition:background .2s,color .2s}
+.toggle button:hover{background:#2c2c2c;color:#fff}
+.toggle button[aria-pressed="true"]{background:var(--burst);color:var(--ink)}
+.cv-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 clamp(19px,5.2vw,28px)/1.2 var(--f-body);margin-top:18px}
+.cv-row .w{padding:5px 9px;border-radius:9px;background:#1f1f1f;transition:opacity .35s,background .3s,color .3s}
+.cv-in.go .w.x{opacity:.35;text-decoration:line-through;text-decoration-color:var(--pink);text-decoration-thickness:3px}
+.cv-out .w.nw{background:var(--burst);color:var(--ink)}
+.cv-tag{display:flex;align-items:center;gap:8px;font:600 13px/1 var(--f-body);color:#9a9a92;margin-top:20px}
+.cv-mach{margin-top:16px;display:flex;align-items:center;gap:10px;background:var(--burst);color:var(--ink);border-radius:16px;padding:10px 14px;font:900 18px/1 var(--f-display);position:relative;overflow:hidden}
+.cv-mach .burst{width:30px;height:30px;fill:var(--ink);stroke:var(--ink);flex:none}
+.cv-mach .ic{margin-left:auto;font-size:22px}
+.cv-note{margin:16px 0 0;font:400 15.5px/1.5 var(--f-body);color:#d6d6ce;display:flex;gap:10px;align-items:flex-start}
+.cv-note .ic{font-size:20px;color:var(--burst);margin-top:2px}
+.cv-ru{margin-top:8px;font:400 15px/1.4 var(--f-body);color:#9a9a92}
+
+/* QUIZ */
+.quiz{margin-top:28px;background:var(--ink);color:#fff;padding:20px;position:relative;overflow:hidden}
+@media (min-width:760px){.quiz{padding:32px}}
+.qbar{display:flex;gap:6px}
+.qbar i{flex:1;height:6px;border-radius:3px;background:#2b2b2b;transition:background .3s}
+.qbar i.ok{background:var(--burst)}.qbar i.bad{background:var(--pink)}.qbar i.cur{background:#fff}
+.qn{font:600 13px/1 var(--f-body);color:#8d8d85;margin-top:18px}
+.qq{font:600 clamp(22px,6vw,34px)/1.25 var(--f-body);margin:10px 0 18px}
+.qq u{text-decoration:none;display:inline-block;min-width:2.4em;border-bottom:3px solid var(--burst);text-align:center;color:var(--burst)}
+.qo{display:grid;gap:8px}
+@media (min-width:600px){.qo{grid-template-columns:repeat(3,1fr)}}
+.qo button{border:1.5px solid #3a3a3a;background:transparent;color:#fff;padding:16px;border-radius:14px;font:700 19px/1.1 var(--f-body);transition:translate .2s,background .2s,border-color .2s;display:flex;align-items:center;justify-content:center;text-align:center}
+.qo button:hover:not(:disabled){border-color:#fff;translate:0 -2px;background:#1b1b1b}
+.qo button.ok{background:var(--burst);color:var(--ink);border-color:var(--burst)}
+.qo button.bad{background:var(--pink);border-color:var(--pink)}
+.qx{margin-top:16px;padding:14px 16px;background:#1b1b1b;border-radius:14px;font-size:15.5px;min-height:3.2em;display:flex;gap:10px;align-items:flex-start}
+.qx .ic{font-size:22px;color:var(--burst);margin-top:1px}
+.qx.bad .ic{color:var(--pink)}
+.qnext{margin-top:16px}
+.qres .score{font:400 clamp(84px,24vw,150px)/1 var(--f-bubble);color:var(--burst);display:flex;align-items:center;gap:14px}
+.qres .score .ic{font-size:.5em}
+.conf{position:absolute;width:10px;height:14px;left:50%;top:40%;pointer-events:none;border-radius:2px}
+
+/* CHEAT */
+.cheat{margin-top:26px;border-top:1.5px solid var(--ink)}
+.ch{display:grid;grid-template-columns:34px 1fr;gap:4px 12px;padding:14px 10px;margin-inline:-10px;border-bottom:1px solid var(--line);align-items:start;border-radius:12px;transition:background .2s}
+.ch:hover{background:var(--card)}
+.ch .ic{font-size:22px;grid-row:1/span 2;color:var(--violet);margin-top:2px}
+@media (min-width:700px){.ch{grid-template-columns:34px 220px 1fr}.ch .ic{grid-row:auto}}
+.ch b{font:800 16px/1.3 var(--f-display)}
+.ch span{font:500 17px/1.45 var(--f-body)}
+.ch span i{font-style:normal;color:var(--violet);font-weight:700}
+
+.outro{background:var(--ink);color:#fff}
+.outro .mega{color:#fff}
+.outro .lede{color:#cfcfc6}
+footer{position:relative;z-index:1;background:var(--ink);color:#8d8d85;padding:28px 0 40px;font-size:13px;border-top:1px solid #222}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01s!important;scroll-behavior:auto!important}
+  .insc .z{max-width:1.4em;opacity:1}
+}
+</style>
+
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="b" viewBox="0 0 100 100"><polygon points="50.0,2.0 57.8,21.0 74.0,8.4 71.2,28.8 91.6,26.0 79.0,42.2 98.0,50.0 79.0,57.8 91.6,74.0 71.2,71.2 74.0,91.6 57.8,79.0 50.0,98.0 42.2,79.0 26.0,91.6 28.8,71.2 8.4,74.0 21.0,57.8 2.0,50.0 21.0,42.2 8.4,26.0 28.8,28.8 26.0,8.4 42.2,21.0"/></symbol>
+  <symbol id="spk" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-snowflake" viewBox="0 0 24 24"><path d="m10 20-1.25-2.5L6 18"/><path d="M10 4 8.75 6.5 6 6"/><path d="m14 20 1.25-2.5L18 18"/><path d="m14 4 1.25 2.5L18 6"/><path d="m17 21-3-6h-4"/><path d="m17 3-3 6 1.5 3"/><path d="M2 12h6.5L10 9"/><path d="m20 10-1.5 2 1.5 2"/><path d="M22 12h-6.5L14 15"/><path d="m4 10 1.5 2L4 14"/><path d="m7 21 3-6-1.5-3"/><path d="m7 3 3 6h4"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-baby" viewBox="0 0 24 24"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></symbol>
+<symbol id="i-crown" viewBox="0 0 24 24"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
+<symbol id="i-log-out" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></symbol>
+<symbol id="i-navigation" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+<symbol id="i-anchor" viewBox="0 0 24 24"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></symbol>
+<symbol id="i-move-right" viewBox="0 0 24 24"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></symbol>
+<symbol id="i-thermometer" viewBox="0 0 24 24"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-audio-lines" viewBox="0 0 24 24"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+<symbol id="i-clapperboard" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+<symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></symbol>
+<symbol id="i-train-front" viewBox="0 0 24 24"><path d="M8 3.1V7a4 4 0 0 0 8 0V3.1"/><path d="m9 15-1-1"/><path d="m15 15 1-1"/><path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z"/><path d="m8 19-2 3"/><path d="m16 19 2 3"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-signpost" viewBox="0 0 24 24"><path d="M12 13v8"/><path d="M12 3v3"/><path d="M18 6a2 2 0 0 1 1.387.56l2.307 2.22a1 1 0 0 1 0 1.44l-2.307 2.22A2 2 0 0 1 18 13H6a2 2 0 0 1-1.387-.56l-2.306-2.22a1 1 0 0 1 0-1.44l2.306-2.22A2 2 0 0 1 6 6z"/></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+<symbol id="i-user-round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></symbol>
+<symbol id="i-hand-helping" viewBox="0 0 24 24"><path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"/><path d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 13 6 6"/></symbol>
+<symbol id="i-thumbs-up" viewBox="0 0 24 24"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></symbol>
+<symbol id="i-frown" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+<symbol id="i-bus" viewBox="0 0 24 24"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+<symbol id="i-ear" viewBox="0 0 24 24"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+<symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+<symbol id="i-merge" viewBox="0 0 24 24"><path d="m8 6 4-4 4 4"/><path d="M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22"/><path d="m20 22-5-5"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+<symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+<symbol id="i-stamp" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M19.27 13.73A2.5 2.5 0 0 0 17.5 13h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1.5c0-.66-.26-1.3-.73-1.77Z"/><path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-3-3c-1.66 0-3 1-3 3s1 2 1 3.5V13"/></symbol>
+<symbol id="i-ghost" viewBox="0 0 24 24"><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></symbol>
+<symbol id="i-door-closed" viewBox="0 0 24 24"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></symbol>
+<symbol id="i-droplets" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+<symbol id="i-gavel" viewBox="0 0 24 24"><path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/></symbol>
+<symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></symbol>
+<symbol id="i-wand-sparkles" viewBox="0 0 24 24"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></symbol>
+<symbol id="i-eraser" viewBox="0 0 24 24"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></symbol>
+<symbol id="i-equal" viewBox="0 0 24 24"><line x1="5" x2="19" y1="9" y2="9"/><line x1="5" x2="19" y1="15" y2="15"/></symbol>
+<symbol id="i-arrow-right-left" viewBox="0 0 24 24"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></symbol>
+<symbol id="i-cog" viewBox="0 0 24 24"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path d="M12 2v2"/><path d="M12 22v-2"/><path d="m17 20.66-1-1.73"/><path d="M11 10.27 7 3.34"/><path d="m20.66 17-1.73-1"/><path d="m3.34 7 1.73 1"/><path d="M14 12h8"/><path d="M2 12h2"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m17 3.34-1 1.73"/><path d="m11 13.73-4 6.93"/></symbol>
+<symbol id="i-circle-slash" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="9" x2="15" y1="15" y2="9"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-feather" viewBox="0 0 24 24"><path d="M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z"/><path d="M16 8 2 22"/><path d="M17.5 15H9"/></symbol>
+<symbol id="i-alarm-clock" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></symbol>
+<symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+<symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-unlock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></symbol>
+
+</svg>
+
+<div class="shade" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="../media/logo.webp" alt="" width="30" height="30"><b>stellas</b></a>
+    <a class="pill noicon" href="#quiz"><svg class="ic"><use href="#i-trophy"/></svg> Тест</a>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main id="top" lang="ru">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="mark" id="mark">
+        <div class="sun" aria-hidden="true"></div>
+        <h1 class="word" aria-label="Passiv"><span>P</span><span>a</span><span>s</span><span>s</span><span>i</span><span>v</span><i class="cross" aria-hidden="true"></i></h1>
+        <svg class="burst b1 spin" aria-hidden="true"><use href="#b"/></svg>
+        <div class="sticker c" aria-hidden="true"><span class="pill pink">ohne werden</span></div>
+        <div class="sticker a" aria-hidden="true"><span class="pill solid">lässt sich</span></div>
+        <div class="sticker b" aria-hidden="true"><span class="pill lime">zu · -bar · man</span></div>
+      </div>
+      <div>
+        <p class="lede">Как сказать «можно» и «надо» без werden. Четыре замены пассива, которые немцы правда говорят каждый день.</p>
+        <div class="meta">
+          <div><small><svg class="ic"><use href="#i-layers"/></svg>Раздел</small><b>Пассив</b></div>
+          <div><small><svg class="ic"><use href="#i-graduation-cap"/></svg>Уровень</small><b>B2</b></div>
+          <div><small><svg class="ic"><use href="#i-timer"/></svg>Время</small><b>8 минут</b></div>
+          <div><small><svg class="ic"><use href="#i-trophy"/></svg>Тест</small><b>6 вопросов</b></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="#idea">Начать разбор <svg class="ic"><use href="#i-arrow-down"/></svg></a>
+          <a class="btn ghost" href="#route"><svg class="ic"><use href="#i-route"/></svg> Маршрут</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="feed" aria-label="История">
+      <article class="ig hov">
+        <div class="ig-h"><span class="av"><svg class="burst"><use href="#b"/></svg></span>stellas.de</div>
+        <div class="poster p1"><svg class="burst spin" aria-hidden="true"><use href="#b"/></svg><h3 lang="de">Gebühr ist zu.<br><span lang="ru">Я выдохнул.</span></h3></div>
+        <div class="ig-a" aria-hidden="true"><svg class="ic liked"><use href="#i-heart"/></svg><svg class="ic"><use href="#i-message-circle"/></svg><svg class="ic"><use href="#i-navigation"/></svg><span class="sp"></span><svg class="ic"><use href="#i-flag"/></svg></div>
+        <p><b>stellas.de</b> Второй месяц в&nbsp;Австрии. Письмо из магистрата. Читаю: <span lang="de">Die Gebühr ist bis Freitag zu bezahlen.</span> Вижу знакомое zu. Zu значит закрыто. Пошлина закрыта. Можно жить дальше. <span class="tag">#Magistrat</span></p>
+      </article>
+      <article class="ig hov">
+        <div class="ig-h"><span class="av"><svg class="burst"><use href="#b"/></svg></span>stellas.de</div>
+        <div class="poster p2"><svg class="ic big-ic" aria-hidden="true"><use href="#i-file-text"/></svg><h3>Через две недели. Второе письмо.</h3><div class="pills"><span class="pill lime" lang="de">Mahnung</span></div></div>
+        <div class="ig-a" aria-hidden="true"><svg class="ic liked"><use href="#i-heart"/></svg><svg class="ic"><use href="#i-message-circle"/></svg><svg class="ic"><use href="#i-navigation"/></svg><span class="sp"></span><svg class="ic"><use href="#i-flag"/></svg></div>
+        <p><b>stellas.de</b> Иду в&nbsp;магистрат. Говорю, у&nbsp;меня же всё zu. Сотрудница говорит, zu значит заплатить. До пятницы. Говорю, какой пятницы. Она говорит, прошлой. <span class="tag">#Mahnung</span></p>
+      </article>
+      <article class="ig hov">
+        <div class="ig-h"><span class="av"><svg class="burst"><use href="#b"/></svg></span>stellas.de</div>
+        <div class="poster p3"><svg class="ic big-ic" aria-hidden="true"><use href="#i-stamp"/></svg><span class="bub" lang="de">ist zu<br>bezahlen</span><div class="pills"><span class="pill lime">= надо заплатить</span></div></div>
+        <div class="ig-a" aria-hidden="true"><svg class="ic liked"><use href="#i-heart"/></svg><svg class="ic"><use href="#i-message-circle"/></svg><svg class="ic"><use href="#i-navigation"/></svg><span class="sp"></span><svg class="ic"><use href="#i-flag"/></svg></div>
+        <p><b>stellas.de</b> sein + zu это пассив в&nbsp;костюме чиновника. Внутри спрятан müssen. Пошлину я, кстати, заплатил. С&nbsp;доплатой.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="band-wrap" aria-hidden="true"><div class="band"><div class="track">
+  <span lang="de">lässt sich <svg class="burst"><use href="#b"/></svg> ist zu machen <svg class="burst"><use href="#b"/></svg> <em class="bub">machbar</em> <svg class="burst"><use href="#b"/></svg> man macht <svg class="burst"><use href="#b"/></svg> ohne werden <svg class="burst"><use href="#b"/></svg></span>
+  <span lang="de">lässt sich <svg class="burst"><use href="#b"/></svg> ist zu machen <svg class="burst"><use href="#b"/></svg> <em class="bub">machbar</em> <svg class="burst"><use href="#b"/></svg> man macht <svg class="burst"><use href="#b"/></svg> ohne werden <svg class="burst"><use href="#b"/></svg></span>
+</div></div></div>
+
+<!-- ROUTE -->
+<section class="route" id="route">
+  <div class="wrap">
+    <h2 class="mega xs" style="margin-top:0">Маршрут. <span class="hl ink">9 остановок.</span></h2>
+    <nav class="rt" aria-label="Разделы" style="margin-top:24px">
+      <span class="rt-line" aria-hidden="true"><span class="rt-fill" id="rtFill"></span></span>
+      <a class="stop" href="#idea"><span class="dot" style="background:var(--violet)"><svg class="ic"><use href="#i-cog"/></svg></span><b>01</b><span>Зачем</span></a>
+      <a class="stop" href="#chars"><span class="dot" style="background:var(--sun)"><svg class="ic"><use href="#i-users"/></svg></span><b>02</b><span>Характеры</span></a>
+      <a class="stop" href="#forms"><span class="dot" style="background:var(--deep)"><svg class="ic"><use href="#i-layers"/></svg></span><b>03</b><span>Формы</span></a>
+      <a class="stop" href="#perfekt"><span class="dot" style="background:var(--pink)"><svg class="ic"><use href="#i-hourglass"/></svg></span><b>04</b><span>Perfekt</span></a>
+      <a class="stop" href="#zu"><span class="dot" style="background:var(--ink)"><svg class="ic"><use href="#i-scale"/></svg></span><b>05</b><span>Надо или можно</span></a>
+      <a class="stop" href="#bar"><span class="dot" style="background:var(--gold)"><svg class="ic"><use href="#i-puzzle"/></svg></span><b>06</b><span>-bar</span></a>
+      <a class="stop" href="#man"><span class="dot" style="background:var(--violet)"><svg class="ic"><use href="#i-ghost"/></svg></span><b>07</b><span>man</span></a>
+      <a class="stop" href="#conv"><span class="dot" style="background:var(--sun)"><svg class="ic"><use href="#i-arrow-right-left"/></svg></span><b>08</b><span>Конвертер</span></a>
+      <a class="stop" href="#quiz"><span class="dot" style="background:var(--deep)"><svg class="ic"><use href="#i-trophy"/></svg></span><b>09</b><span>Тест</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- IDEA -->
+<section id="idea">
+  <div class="wrap">
+    <h2 class="mega">Пассив тяжёлый. <span class="hl pink">Есть четыре замены.</span></h2>
+    <p class="lede w rv">Kann gelöst werden. Три слова ради одной мысли «можно решить». Немцы в&nbsp;жизни говорят короче.</p>
+
+    <div class="fab" id="fab">
+      <p class="lbl"><svg class="ic"><use href="#i-zap"/></svg>Конвейер · пассив заходит, замена выходит</p>
+      <div class="fcol fin" lang="de">
+        <span class="fc"><span>Die Regeln <b>können</b> erklärt <b>werden</b>.</span></span>
+        <span class="fc"><span>Das Geschirr <b>muss</b> gespült <b>werden</b>.</span></span>
+        <span class="fc"><span>Die Krankheit <b>kann</b> geheilt <b>werden</b>.</span></span>
+        <span class="fc"><span>Die Reise <b>konnte</b> gebucht <b>werden</b>.</span></span>
+      </div>
+      <div class="mach" id="mach"><svg class="burst" aria-hidden="true"><use href="#b"/></svg><svg class="ic"><use href="#i-wand-sparkles"/></svg><b>Ersatz</b></div>
+      <div class="fcol fout" lang="de">
+        <span class="fc"><span class="lt" style="background:var(--violet)">L</span><span>Die Regeln <b>lassen sich</b> erklären.</span></span>
+        <span class="fc"><span class="lt" style="background:var(--sun)">S</span><span>Das Geschirr <b>ist zu</b> spülen.</span></span>
+        <span class="fc"><span class="lt" style="background:var(--deep)">B</span><span>Die Krankheit ist <b>heilbar</b>.</span></span>
+        <span class="fc"><span class="lt" style="background:var(--pink)">M</span><span><b>Man</b> konnte die Reise buchen.</span></span>
+      </div>
+    </div>
+
+    <div class="mnemo" id="mnemo">
+      <span class="L">L</span><span class="L">S</span><span class="L">B</span><span class="L">M</span>
+      <p><b>Запоминалка: L · S · B · M.</b> Лёгкий Способ Без Мучений. lassen, sein + zu, -bar, man. Четыре буквы, и&nbsp;werden можно отпустить.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTERS -->
+<section id="chars">
+  <div class="wrap split">
+    <div>
+      <h2 class="mega s">Если бы замены пассива были людьми, <span class="hl lime">это была бы банда.</span></h2>
+      <p class="lede rv">Шесть персонажей. У&nbsp;каждого свой характер. Нажми на динамик и&nbsp;послушай.</p>
+    </div>
+    <div class="traits">
+      <div class="trait rv"><span class="ti" style="background:var(--violet)"><svg class="ic"><use href="#i-unlock"/></svg></span><h4>Оптимист<small lang="de">sich lassen</small></h4><span class="n">01</span><p>Везде видит возможность. Добавь nicht, и&nbsp;станет реалистом.</p><div class="ex"><button class="say" data-say="Das lässt sich machen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Das lässt sich machen.</b><br><span>Это можно устроить.</span></div></div></div>
+      <div class="trait rv"><span class="ti" style="background:var(--sun)"><svg class="ic"><use href="#i-stamp"/></svg></span><h4>Чиновник<small lang="de">sein + zu</small></h4><span class="n">02</span><p>Говорит как письмо из магистрата. Чаще «надо», иногда «можно».</p><div class="ex"><button class="say" data-say="Der Antrag ist bis Montag einzureichen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Der Antrag ist bis Montag einzureichen.</b><br><span>Заявление надо подать до понедельника.</span></div></div></div>
+      <div class="trait rv"><span class="ti" style="background:var(--deep)"><svg class="ic"><use href="#i-feather"/></svg></span><h4>Минималист<small lang="de">-bar</small></h4><span class="n">03</span><p>Одно слово вместо трёх. Чемодан собран за минуту.</p><div class="ex"><button class="say" data-say="Das ist machbar." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Das ist machbar.</b><br><span>Это выполнимо.</span></div></div></div>
+      <div class="trait rv"><span class="ti" style="background:var(--gold)"><svg class="ic"><use href="#i-crown"/></svg></span><h4>Аристократ<small lang="de">-lich · -abel</small></h4><span class="n">04</span><p>Старинные слова с&nbsp;родословной. Список закрытый, новых не придумываем.</p><div class="ex"><button class="say" data-say="Das Angebot ist akzeptabel." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Das Angebot ist akzeptabel.</b><br><span>Предложение приемлемое.</span></div></div></div>
+      <div class="trait rv"><span class="ti" style="background:var(--pink)"><svg class="ic"><use href="#i-ban"/></svg></span><h4>Скептик<small lang="de">un- · in-</small></h4><span class="n">05</span><p>Ставит одну приставку и&nbsp;закрывает тему. Невозможно.</p><div class="ex"><button class="say" data-say="Das Problem ist unlösbar." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Das Problem ist unlösbar.</b><br><span>Проблема нерешаемая.</span></div></div></div>
+      <div class="trait rv"><span class="ti" style="background:var(--ink)"><svg class="ic"><use href="#i-ghost"/></svg></span><h4>Свой парень<small lang="de">man + Aktiv</small></h4><span class="n">06</span><p>Говорит по-простому. Кто-то делает, и&nbsp;кто именно, неважно.</p><div class="ex"><button class="say" data-say="Hier spricht man Deutsch." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b class="de" lang="de">Hier spricht man Deutsch.</b><br><span>Здесь говорят по-немецки.</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMS -->
+<section id="forms">
+  <div class="wrap">
+    <h2 class="mega">Пассив снимает пиджак. <span class="hl">Смысл остаётся.</span></h2>
+    <p class="lede w rv">Шесть карточек. Слово сверху меняется само: было в&nbsp;пассиве, стало заменой.</p>
+
+    <div class="panels">
+      <article class="panel v hov" lang="de">
+        <span class="ghost" aria-hidden="true">L</span><svg class="ic who" aria-hidden="true"><use href="#i-unlock"/></svg>
+        <span class="casepill" data-lbl data-a="Passiv" data-b="sich lassen">Passiv</span>
+        <div class="morph flip" data-from="kann" data-to="lässt"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>Формула</dt><dd><b>lassen + sich</b> + инфинитив в&nbsp;конце</dd></div>
+          <div><dt>Präsens</dt><dd lang="de">lässt sich · lassen sich</dd></div>
+          <div><dt>Präteritum</dt><dd lang="de">ließ sich · ließen sich</dd></div>
+          <div><dt>Perfekt</dt><dd lang="de">hat sich … lassen</dd></div>
+          <div><dt>Смысл</dt><dd>можно · с&nbsp;nicht нельзя</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Der Fehler lässt sich beheben.</span> · Ошибку можно исправить.</dd></div>
+        </dl>
+        <p class="note" lang="ru"><svg class="ic"><use href="#i-arrow-right-left"/></svg><span>В&nbsp;пассиве было бы: <span lang="de">Der Fehler kann behoben werden.</span></span></p>
+      </article>
+      <article class="panel s hov" lang="de">
+        <span class="ghost" aria-hidden="true">S</span><svg class="ic who" aria-hidden="true"><use href="#i-stamp"/></svg>
+        <span class="casepill" data-lbl data-a="Passiv" data-b="sein + zu">Passiv</span>
+        <div class="morph flip" data-from="muss" data-to="ist zu"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>Формула</dt><dd><b>sein + zu</b> + инфинитив в&nbsp;конце</dd></div>
+          <div><dt>Präsens</dt><dd lang="de">ist zu · sind zu</dd></div>
+          <div><dt>Präteritum</dt><dd lang="de">war zu · waren zu</dd></div>
+          <div><dt>Отделяемые</dt><dd>zu встаёт внутрь: <span lang="de">ab<b>zu</b>geben</span></dd></div>
+          <div><dt>Смысл</dt><dd>надо или можно. Решает ситуация</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Die Miete ist bis zum Ersten zu zahlen.</span> · Аренду надо оплатить до первого числа.</dd></div>
+        </dl>
+        <p class="note" lang="ru"><svg class="ic"><use href="#i-eye"/></svg><span>Подвох. nicht zu почти всегда значит «невозможно». <span lang="de">Das ist nicht zu glauben.</span> В&nbsp;это невозможно поверить.</span></p>
+      </article>
+      <article class="panel d hov" lang="de">
+        <span class="ghost" aria-hidden="true">B</span><svg class="ic who" aria-hidden="true"><use href="#i-feather"/></svg>
+        <span class="casepill" data-lbl data-a="Verb" data-b="-bar">Verb</span>
+        <div class="morph flip" data-from="lösen" data-to="lösbar"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>Формула</dt><dd>основа глагола + <b>bar</b></dd></div>
+          <div><dt>От каких</dt><dd>от переходных: тех, что берут Akkusativ</dd></div>
+          <div><dt>Примеры</dt><dd lang="de">machbar · essbar · trinkbar · lesbar · erreichbar</dd></div>
+          <div><dt>Смысл</dt><dd>можно сделать</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Die Aufgabe ist lösbar.</span> · Задачу можно решить.</dd></div>
+        </dl>
+        <p class="note" lang="ru"><svg class="ic"><use href="#i-circle-slash"/></svg><span>schlafbar не бывает. Спать кого-то нельзя. Нет Akkusativ, нет и&nbsp;-bar.</span></p>
+      </article>
+      <article class="panel g hov" lang="de">
+        <span class="ghost" aria-hidden="true">lich</span><svg class="ic who" aria-hidden="true"><use href="#i-crown"/></svg>
+        <span class="casepill" data-lbl data-a="Verb" data-b="-lich">Verb</span>
+        <div class="morph flip" data-from="erhalten" data-to="erhältlich"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>Как работает</dt><dd>готовые слова. Свои не собираем</dd></div>
+          <div><dt>Примеры</dt><dd lang="de">verständlich · erklärlich · unvermeidlich · erhältlich</dd></div>
+          <div><dt>Смысл</dt><dd>можно понять, объяснить, купить</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Das Buch ist überall erhältlich.</span> · Книгу можно купить везде.</dd></div>
+        </dl>
+      </article>
+      <article class="panel o hov" lang="de">
+        <span class="ghost" aria-hidden="true">abel</span><svg class="ic who" aria-hidden="true"><use href="#i-wrench"/></svg>
+        <span class="casepill" data-lbl data-a="Verb" data-b="-abel">Verb</span>
+        <div class="morph flip" data-from="reparieren" data-to="reparabel"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>От каких</dt><dd>от глаголов на <b>-ieren</b></dd></div>
+          <div><dt>Примеры</dt><dd lang="de">akzeptabel · diskutabel · reparabel · praktikabel</dd></div>
+          <div><dt>Смысл</dt><dd>можно принять, обсудить, починить</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Der Schaden ist reparabel.</span> · Повреждение можно исправить.</dd></div>
+        </dl>
+      </article>
+      <article class="panel p hov" lang="de">
+        <span class="ghost" aria-hidden="true">un</span><svg class="ic who" aria-hidden="true"><use href="#i-ban"/></svg>
+        <span class="casepill" data-lbl data-a="можно" data-b="нельзя">можно</span>
+        <div class="morph flip" data-from="heilbar" data-to="unheilbar"></div>
+        <dl class="spec" lang="ru">
+          <div><dt>-bar, -lich</dt><dd>берут <b>un-</b>: <span lang="de">unlösbar · unheilbar · unverständlich · unerklärlich</span></dd></div>
+          <div><dt>-abel</dt><dd>берёт <b>in-</b>: <span lang="de">inakzeptabel · indiskutabel · irreparabel</span></dd></div>
+          <div><dt>Смысл</dt><dd>сделать невозможно</dd></div>
+          <div><dt>Пример</dt><dd><span lang="de">Die Rede war unverständlich.</span> · Речь была непонятной.</dd></div>
+        </dl>
+        <p class="note" lang="ru"><svg class="ic"><use href="#i-message-circle"/></svg><span>indiskutabel значит «тут даже обсуждать нечего». Так немцы вежливо говорят «нет».</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PERFEKT -->
+<section id="perfekt">
+  <div class="wrap">
+    <h2 class="mega">В Perfekt lassen <span class="hl sun">теряет ge-.</span></h2>
+    <p class="lede w rv">Самое коварное место у&nbsp;sich lassen. Два инфинитива подряд в&nbsp;конце. Смотри по шагам.</p>
+
+    <div class="scene rv" id="scene">
+      <div class="scene-top"><p class="lbl"><svg class="ic"><use href="#i-ticket"/></svg>Бронируем поездку · 5 шагов</p><span class="pill" id="tense">Präsens</span></div>
+      <div class="pk" lang="de">
+        <span class="tile" data-k="t1">Die Reise<em>SUBJ</em></span>
+        <span class="tile v" data-k="t2a">lässt<em>место 2</em></span>
+        <span class="tile v" data-k="t2b" hidden>hat<em>место 2</em></span>
+        <span class="tile" data-k="t3">sich<em>SICH</em></span>
+        <span class="tile inf" data-k="t4">buchen<em>INF</em></span>
+        <span class="tile inf" data-k="t5" hidden><span><span class="ge">ge</span>lassen</span><em>конец</em></span>
+        <button class="say" id="pkSay" data-say="Die Reise lässt sich buchen." aria-label="Послушать"><svg><use href="#spk"/></svg></button>
+      </div>
+      <p class="cap" id="cap"></p>
+      <div class="ctrl">
+        <button class="nav" id="prev" aria-label="Назад"><svg class="ic" style="transform:scaleX(-1)"><use href="#i-arrow-right"/></svg></button>
+        <div class="dots" id="dots"><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="nav" id="next" aria-label="Дальше"><svg class="ic"><use href="#i-arrow-right"/></svg></button>
+        <button class="pill" id="replay"><svg class="ic"><use href="#i-repeat"/></svg> Ещё раз</button>
+      </div>
+    </div>
+
+    <div class="exl">
+      <div class="row"><button class="say" data-say="Die Probleme haben sich nicht vorhersehen lassen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Die Probleme haben sich nicht vorhersehen lassen.</b><span>Проблемы невозможно было предвидеть.</span></div></div>
+      <div class="row"><button class="say" data-say="Die Reise ließ sich problemlos buchen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Die Reise ließ sich problemlos buchen.</b><span>Поездку удалось забронировать без проблем. В&nbsp;письме чаще Präteritum.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band-wrap" aria-hidden="true"><div class="band lime"><div class="track">
+  <span lang="de">ist zu bezahlen <svg class="burst"><use href="#b"/></svg> <em class="bub">muss?</em> <svg class="burst"><use href="#b"/></svg> ist leicht zu lösen <svg class="burst"><use href="#b"/></svg> <em class="bub">kann?</em> <svg class="burst"><use href="#b"/></svg></span>
+  <span lang="de">ist zu bezahlen <svg class="burst"><use href="#b"/></svg> <em class="bub">muss?</em> <svg class="burst"><use href="#b"/></svg> ist leicht zu lösen <svg class="burst"><use href="#b"/></svg> <em class="bub">kann?</em> <svg class="burst"><use href="#b"/></svg></span>
+</div></div></div>
+
+<!-- SEIN + ZU -->
+<section id="zu">
+  <div class="wrap">
+    <h2 class="mega">sein + zu. <span class="hl teal">Надо или можно?</span></h2>
+    <p class="lede w rv">Конструкция одна. Смысл решают соседние слова. Смотри, как фраза проходит по схеме.</p>
+
+    <div class="flow dk" id="flowZ" data-flow='[{"t":"Die Gebühr ist bis Freitag zu bezahlen.","hit":0,"a":"muss bezahlt werden"},{"t":"Der Fleck ist leicht zu entfernen.","hit":1,"a":"kann leicht entfernt werden"},{"t":"Das Treffen ist nicht zu vermeiden.","hit":1,"a":"kann nicht vermieden werden"},{"t":"Der Antrag ist schriftlich einzureichen.","hit":0,"a":"muss schriftlich eingereicht werden"},{"t":"Das Ergebnis ist kaum zu glauben.","hit":1,"a":"man kann es kaum glauben"},{"t":"Die Fenster sind zu putzen.","hit":2,"a":"надо? можно? Спроси контекст"}]'>
+      <p class="lbl"><svg class="ic"><use href="#i-search"/></svg>Фраза на проверке</p>
+      <div class="fchip" lang="de"><span class="fq">Die Gebühr ist bis Freitag zu bezahlen.</span><span class="fans"></span></div>
+      <div class="fn"><div class="fqq"><svg class="ic"><use href="#i-alarm-clock"/></svg>Срок, правило, инструкция? bis, sofort, schriftlich</div><div class="fy"><em>да <svg class="ic"><use href="#i-arrow-right"/></svg></em><span class="res sun">= muss</span></div></div>
+      <div class="fno">нет</div>
+      <div class="fn"><div class="fqq"><svg class="ic"><use href="#i-scale"/></svg>Оценка трудности? leicht, schwer, kaum, nicht</div><div class="fy"><em>да <svg class="ic"><use href="#i-arrow-right"/></svg></em><span class="res">= kann</span></div></div>
+      <div class="fno">нет</div>
+      <div class="fn else"><span class="res lime">Подсказок нет. Смотри на ситуацию</span></div>
+    </div>
+
+    <h3 class="mega xs">Ловушка из конспектов. <span class="hl pink">nicht zu.</span></h3>
+    <div class="cold">
+      <div class="bad hov"><svg class="ic bigi"><use href="#i-circle-x"/></svg><span class="pill" lang="de">Das Treffen ist nicht zu vermeiden.</span><b lang="de">darf nicht vermieden werden</b><p>Это значит «избегать встречи запрещено». Звучит как приказ ходить на собрания. Так переводить нельзя.</p></div>
+      <div class="good hov"><svg class="ic bigi"><use href="#i-circle-check"/></svg><span class="pill" lang="de">Das Treffen ist nicht zu vermeiden.</span><b lang="de">kann nicht vermieden werden</b><p>Встречи не избежать. nicht zu здесь про невозможность. Как <span lang="de">nicht zu glauben, nicht zu übersehen.</span></p></div>
+    </div>
+
+    <h3 class="mega xs">Отделяемый глагол? <span class="hl lime">zu ныряет внутрь.</span></h3>
+    <div class="ins" lang="de">
+      <div class="insc"><span class="w3">ab<span class="z">zu</span>geben</span><small lang="ru">Die Unterlagen sind bis Montag abzugeben. · Документы сдать до понедельника.</small></div>
+      <div class="insc"><span class="w3">ein<span class="z">zu</span>reichen</span><small lang="ru">Der Antrag ist online einzureichen. · Заявление подаётся онлайн.</small></div>
+      <div class="insc"><span class="w3">aus<span class="z">zu</span>füllen</span><small lang="ru">Das Formular ist vollständig auszufüllen. · Форму надо заполнить целиком.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- -BAR -->
+<section id="bar">
+  <div class="wrap">
+    <h2 class="mega">Минус три слова. <span class="hl deep">Плюс -bar.</span></h2>
+    <p class="lede w rv">kann gelöst werden сжимается в&nbsp;lösbar. Одно прилагательное делает работу целого пассива.</p>
+
+    <div class="build" id="build" aria-live="off" lang="de">
+      <span class="bu off" id="bUn">un</span><span class="bb" id="bBase">lös</span><span class="bp">+</span><span class="be" id="bEnd">bar</span><span class="bp">=</span><span class="br" id="bRes">lösbar</span>
+      <span class="bg" lang="ru"><svg class="ic"><use href="#i-puzzle"/></svg><span id="bGen">можно решить</span></span>
+    </div>
+
+    <h3 class="mega xs">Похожи, но <span class="hl pink">смысл разный.</span></h3>
+    <p class="lede w rv">Три пары близнецов. Одна буква в&nbsp;суффиксе, и&nbsp;перевод уезжает.</p>
+    <div class="twins">
+      <div class="twin hov" data-twin><span class="tag3" lang="de"><span class="ra">-bar</span><span class="rb">-lich</span></span><div class="tw" lang="de"><span class="flip" data-from="lösbar" data-to="löslich"></span></div><p class="ra">решаемый. <span lang="de">Die Aufgabe ist lösbar.</span></p><p class="rb">растворимый. <span lang="de">Zucker ist wasserlöslich.</span></p></div>
+      <div class="twin hov" data-twin><span class="tag3" lang="de"><span class="ra">-bar</span><span class="rb">-lich</span></span><div class="tw" lang="de"><span class="flip" data-from="unaussprechbar" data-to="unaussprechlich"></span></div><p class="ra">непроизносимый. Так говорят про трудное имя.</p><p class="rb">невыразимый. <span lang="de">unaussprechliches Glück</span>, невыразимое счастье.</p></div>
+      <div class="twin hov" data-twin><span class="tag3" lang="de"><span class="ra">-bar</span><span class="rb">-lich</span></span><div class="tw" lang="de"><span class="flip" data-from="sonderbar" data-to="sonderlich"></span></div><p class="ra">странный. <span lang="de">Ein sonderbarer Typ.</span> Странный тип.</p><p class="rb">особенный. Почти всегда с&nbsp;nicht: <span lang="de">nicht sonderlich gut</span>, не особо хорошо.</p></div>
+    </div>
+    <div class="tips">
+      <div class="tip hov"><p class="th"><span class="ti2" style="background:var(--deep)"><svg class="ic"><use href="#i-lightbulb"/></svg></span>Лайфхак</p><p>Собрал слово на -bar и&nbsp;сомневаешься? Проверь в&nbsp;словаре. machbar, essbar, waschbar живут давно. Свежие самоделки звучат как Франкенштейн.</p></div>
+      <div class="tip hov"><p class="th"><span class="ti2" style="background:var(--pink)"><svg class="ic"><use href="#i-eye"/></svg></span>Подвох</p><p>sonderbar и&nbsp;sonderlich к&nbsp;пассиву отношения не имеют. Просто старые слова с&nbsp;теми же суффиксами. Учи их отдельно.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MAN -->
+<section id="man">
+  <div class="wrap">
+    <h2 class="mega">man. <span class="hl">Пассив для ленивых.</span></h2>
+    <p class="lede w rv">Не хочешь конструкций? Бери man и&nbsp;говори в&nbsp;активе. Кто делает, неважно. Главное, что делают.</p>
+
+    <div class="lanes">
+      <div class="lane rv">
+        <div class="lh"><span class="lflag">PASSIV</span><small><svg class="ic"><use href="#i-eye"/></svg>подлежащее в&nbsp;Nominativ</small></div>
+        <div class="big" lang="de"><span class="su">Der Fehler</span><span>kann behoben werden.</span></div>
+      </div>
+      <div class="lane dk rv">
+        <div class="lh"><span class="lflag">MAN</span><small><svg class="ic"><use href="#i-eye"/></svg>der стал den. Теперь это Akkusativ</small></div>
+        <div class="big" lang="de"><span>Man kann</span><span class="flip mflip" data-from="der" data-to="den"></span><span>Fehler beheben.</span></div>
+      </div>
+    </div>
+
+    <div class="exl">
+      <div class="row"><button class="say" data-say="Man kann die Krankheit heilen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Man kann die Krankheit heilen.</b><span>Болезнь можно вылечить.</span></div></div>
+      <div class="row"><button class="say" data-say="Man konnte die Reise problemlos buchen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Man konnte die Reise problemlos buchen.</b><span>Поездку можно было спокойно забронировать.</span></div></div>
+      <div class="row"><button class="say" data-say="Hier darf man nicht rauchen." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Hier darf man nicht rauchen.</b><span>Здесь нельзя курить.</span></div></div>
+      <div class="row"><button class="say" data-say="Das macht man nicht." aria-label="Послушать"><svg><use href="#spk"/></svg></button><div><b lang="de">Das macht man nicht.</b><span>Так не делают. (Любимая фраза всех немецких бабушек.)</span></div></div>
+    </div>
+
+    <div class="tips">
+      <div class="tip hov"><p class="th"><span class="ti2" style="background:var(--violet)"><svg class="ic"><use href="#i-user"/></svg></span>Глагол как у&nbsp;er</p><p>man всегда берёт форму третьего лица: man kann, man macht, man spricht.</p><div class="line"><button class="say" data-say="Wie sagt man das auf Deutsch?" aria-label="Послушать"><svg><use href="#spk"/></svg></button><span class="de" lang="de">Wie sagt man das auf Deutsch?</span></div></div>
+      <div class="tip hov"><p class="th"><span class="ti2" style="background:var(--sun)"><svg class="ic"><use href="#i-shuffle"/></svg></span>Уровень B2</p><p>В&nbsp;Akkusativ man превращается в&nbsp;einen, в&nbsp;Dativ в&nbsp;einem.</p><div class="line"><button class="say" data-say="Das kann einen wirklich nerven." aria-label="Послушать"><svg><use href="#spk"/></svg></button><span class="de" lang="de">Das kann einen wirklich nerven. · Это реально может бесить.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERTER -->
+<section id="conv">
+  <div class="wrap">
+    <h2 class="mega">Конвертер. <span class="hl sun">Жми и смотри.</span></h2>
+    <p class="lede w rv">Выбери фразу и&nbsp;способ. werden уходит, замена встаёт на его место.</p>
+
+    <div class="conv" id="conv-box">
+      <div class="cv-bar">
+        <p class="lbl"><svg class="ic"><use href="#i-file-text"/></svg>Фраза в&nbsp;пассиве</p>
+        <div class="chips" id="cvS" role="group" aria-label="Фраза">
+          <button type="button" data-s="0" aria-pressed="true">Проблема</button>
+          <button type="button" data-s="1" aria-pressed="false">Текст</button>
+          <button type="button" data-s="2" aria-pressed="false">Ошибка</button>
+        </div>
+      </div>
+      <div class="cv-row cv-in" id="cvIn" lang="de"></div>
+      <p class="cv-ru" id="cvRu"></p>
+      <div class="cv-bar" style="margin-top:18px">
+        <p class="lbl"><svg class="ic"><use href="#i-wand-sparkles"/></svg>Способ замены</p>
+        <div class="toggle" id="cvM" role="group" aria-label="Способ">
+          <button type="button" data-m="lassen" aria-pressed="true">sich lassen</button>
+          <button type="button" data-m="zu" aria-pressed="false">sein + zu</button>
+          <button type="button" data-m="bar" aria-pressed="false">-bar · -lich</button>
+          <button type="button" data-m="man" aria-pressed="false">man</button>
+        </div>
+      </div>
+      <div class="cv-mach" id="cvMach"><svg class="burst spin" aria-hidden="true"><use href="#b"/></svg><span id="cvLabel">sich lassen</span><svg class="ic"><use href="#i-arrow-down"/></svg></div>
+      <div class="cv-row cv-out" id="cvOut" lang="de"></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:14px"><button class="say" id="cvSay" data-say="" aria-label="Послушать"><svg><use href="#spk"/></svg></button><span class="cv-ru" style="margin:0">Послушать замену</span></div>
+      <p class="cv-note"><svg class="ic"><use href="#i-lightbulb"/></svg><span id="cvNote"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <div class="wrap">
+    <h2 class="mega">Проверь себя. <span class="hl lime">Честно.</span></h2>
+    <div class="quiz rv" id="qz" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- CHEAT -->
+<section id="cheat">
+  <div class="wrap">
+    <h2 class="mega">Коротко. <span class="hl noon">Одна шпаргалка.</span></h2>
+    <p class="lede w rv">Весь гайд на одном экране. Сделай скрин.</p>
+    <div class="cheat stg">
+      <div class="ch"><svg class="ic"><use href="#i-file-text"/></svg><b>Пассив</b><span lang="de">Das Problem kann gelöst werden.</span></div>
+      <div class="ch"><svg class="ic"><use href="#i-unlock"/></svg><b>sich lassen</b><span><span lang="de">lässt sich <i>lösen</i></span> · Perfekt: <span lang="de">hat sich lösen <i>lassen</i></span></span></div>
+      <div class="ch"><svg class="ic"><use href="#i-stamp"/></svg><b>sein + zu</b><span><span lang="de">ist <i>zu</i> lösen</span> · надо или можно · <span lang="de">ab<i>zu</i>geben</span></span></div>
+      <div class="ch"><svg class="ic"><use href="#i-feather"/></svg><b>-bar</b><span lang="de">lös<i>bar</i> · mach<i>bar</i> · erreich<i>bar</i></span></div>
+      <div class="ch"><svg class="ic"><use href="#i-crown"/></svg><b>-lich · -abel</b><span lang="de">verständ<i>lich</i> · erhält<i>lich</i> · akzept<i>abel</i></span></div>
+      <div class="ch"><svg class="ic"><use href="#i-ban"/></svg><b>Нельзя</b><span><span lang="de"><i>un</i>lösbar · <i>in</i>akzeptabel · <i>ir</i>reparabel</span></span></div>
+      <div class="ch"><svg class="ic"><use href="#i-ghost"/></svg><b>man</b><span><span lang="de">Man kann <i>den</i> Fehler beheben.</span> der → den</span></div>
+      <div class="ch"><svg class="ic"><use href="#i-eye"/></svg><b>Ловушка</b><span><span lang="de">nicht zu vermeiden</span> = <i>kann</i> nicht vermieden werden</span></div>
+      <div class="ch"><svg class="ic"><use href="#i-brain"/></svg><b>Запоминалка</b><span>L · S · B · M · Лёгкий Способ Без Мучений</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="outro">
+  <div class="wrap">
+    <h2 class="mega">werden для учебника. <span class="hl lime">lässt sich для жизни.</span></h2>
+    <p class="lede">Пассив никуда не делся. Просто теперь у&nbsp;тебя есть выбор. Вернись через три дня и&nbsp;пройди тест ещё раз. Повторение держит дольше новых тем.</p>
+    <div class="cta-row"><a class="btn lime big" href="#quiz"><svg class="ic"><use href="#i-repeat"/></svg> К тесту</a><a class="btn ghost wh" href="#route">Маршрут</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Stellas · немецкий без воды</span><span>Гайд: Passiversatz · 2026</span></div></footer>
+
+<script>
+function passivInit(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
+  if(G){
+    try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); window.MotionPathPlugin && G.registerPlugin(MotionPathPlugin); }catch(e){ G = null; }
+  }
+  if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
+  var ST = G && window.SplitText;
+  function $(s,r){ return (r||document).querySelector(s); }
+  function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+
+  /* ---------- speech ---------- */
+  var tts = 'speechSynthesis' in window;
+  if(!tts) document.documentElement.classList.add('no-tts');
+  var deVoice = null;
+  function pickVoice(){ try{ var v = speechSynthesis.getVoices(); deVoice = v.find(function(x){return /^de/i.test(x.lang)}) || null; }catch(e){} }
+  if(tts){ pickVoice(); try{ speechSynthesis.onvoiceschanged = pickVoice; }catch(e){} }
+  function say(text, btn){
+    if(!tts || !text) return;
+    try{
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE'; u.rate = .88; if(deVoice) u.voice = deVoice;
+      if(btn){ btn.classList.add('on'); u.onend = u.onerror = function(){ btn.classList.remove('on'); }; }
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-say]');
+    if(!b) return;
+    say(b.dataset.say, b.classList.contains('say') ? b : null);
+  });
+
+  function whenVisible(el, on, off, th){
+    if(!el) return;
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ en.isIntersecting ? on() : (off && off()); }); }, {threshold:th||.25}).observe(el);
+  }
+
+  /* ---------- flip letters ---------- */
+  function buildFlip(el){
+    // shared prefix stays still, the rest flips as one block (no gaps from letters of different width)
+    var a = el.dataset.from, b = el.dataset.to, p = 0;
+    while(p < a.length && p < b.length && a[p] === b[p]) p++;
+    el.innerHTML = (p ? '<span>' + a.slice(0, p) + '</span>' : '') + '<span class="fl"><i class="fa">' + a.slice(p) + '</i><i class="fb">' + b.slice(p) + '</i></span>';
+  }
+  $$('.flip[data-from]').forEach(buildFlip);
+
+  function loopFlip(host, flips, lbl, delay){
+    var t = null;
+    function tick(){
+      flips.forEach(function(m){ m.classList.toggle('to'); });
+      if(lbl) lbl.textContent = flips[0].classList.contains('to') ? lbl.dataset.b : lbl.dataset.a;
+    }
+    if(reduce){ flips.forEach(function(m){ m.classList.add('to'); }); if(lbl) lbl.textContent = lbl.dataset.b; return; }
+    whenVisible(host, function(){ if(t) return; setTimeout(tick, 400 + (delay||0)); t = setInterval(tick, 2600); }, function(){ clearInterval(t); t=null; });
+  }
+  $$('.panel').forEach(function(p, i){ loopFlip(p, [$('.morph', p)], $('[data-lbl]', p), (i%2)*500); });
+  $$('[data-twin]').forEach(function(c, i){ loopFlip(c, [$('.flip', c), c], null, i*450); });
+  loopFlip($('.lanes'), $$('.mflip'));
+
+  /* ---------- reveal ---------- */
+  $$('.stg').forEach(function(g){ Array.prototype.forEach.call(g.children, function(c,i){ c.style.setProperty('--i', i); }); });
+  if(G && !reduce){
+    $$('.mega').forEach(function(h){
+      var targets = h;
+      if(ST){ try{ var sp = new SplitText(h, {type:'words', wordsClass:'wd'}); targets = sp.words; }catch(e){} }
+      G.from(targets, {yPercent:55, rotation:5, transformOrigin:'0% 100%', duration:.8, ease:'back.out(2)', stagger:.045,
+        scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+      $$('.hl', h).forEach(function(hl){
+        G.from(hl, {rotation:-14, scale:1.25, duration:.9, ease:'elastic.out(1,.45)', delay:.25, scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+      });
+    });
+    G.set('.rv', {y:46, rotation:1.2});
+    ScrollTrigger.batch('.rv', {start:'top 94%', once:true, onEnter:function(b){ G.to(b, {y:0, rotation:0, duration:.9, ease:'power3.out', stagger:.08}); }});
+    $$('.stg').forEach(function(g){
+      G.from(g.children, {y:34, scale:.92, rotation:function(){ return G.utils.random(-4,4); }, duration:.7, ease:'back.out(1.8)', stagger:.07,
+        scrollTrigger:{trigger:g, start:'top 88%', once:true}});
+    });
+    G.from('#mnemo .L', {y:-90, rotation:function(){ return G.utils.random(-30,30); }, duration:1.1, ease:'bounce.out', stagger:.12, scrollTrigger:{trigger:'#mnemo', start:'top 90%', once:true}});
+    ScrollTrigger.batch('.trait .ti', {start:'top 92%', once:true, onEnter:function(b){ G.from(b, {scale:.3, rotation:-120, duration:.8, ease:'back.out(2.2)', stagger:.08}); }});
+    ScrollTrigger.batch('.panel', {start:'top 92%', once:true, onEnter:function(b){ G.from(b, {y:60, rotation:function(){ return G.utils.random(-4,4); }, duration:.8, ease:'back.out(1.6)', stagger:.08}); }});
+    ScrollTrigger.batch('.twin, .insc, .tip', {start:'top 94%', once:true, onEnter:function(b){ G.from(b, {y:40, scale:.94, duration:.7, ease:'back.out(2)', stagger:.07}); }});
+    ScrollTrigger.batch('.cold > div', {start:'top 92%', once:true, onEnter:function(b){ G.from(b, {y:50, rotation:function(i){ return i ? 3 : -3; }, duration:.8, ease:'back.out(1.8)', stagger:.12}); }});
+    G.from('.ig', {y:70, rotation:function(i){ return [-4,3,-2][i]; }, duration:.9, ease:'back.out(1.6)', stagger:.12, scrollTrigger:{trigger:'.feed', start:'top 90%', once:true}});
+
+    G.to('.mark .sun', {yPercent:40, rotation:90, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}});
+    G.to('#prog', {scaleX:1, ease:'none', scrollTrigger:{trigger:'main', start:'top top', end:'bottom bottom', scrub:.3}});
+    G.fromTo('#rtFill', {scaleX:0}, {scaleX:1, ease:'none', scrollTrigger:{trigger:'#route', start:'top 80%', end:'bottom 20%', scrub:.5}});
+    G.from('.stop .dot', {scale:.4, rotation:-90, duration:.6, ease:'back.out(3)', stagger:.06, scrollTrigger:{trigger:'#route', start:'top 88%', once:true}});
+    $$('.track').forEach(function(tr){
+      var dir = tr.closest('.band.lime') ? 1 : -1;
+      var loop = G.fromTo(tr, {xPercent: dir<0 ? 0 : -50}, {xPercent: dir<0 ? -50 : 0, duration:26, ease:'none', repeat:-1});
+      var band = tr.parentNode, baseRot = band.classList.contains('lime') ? 2.5 : -3.5;
+      ScrollTrigger.create({trigger:band, start:'top bottom', end:'bottom top', onUpdate:function(self){
+        var v = self.getVelocity();
+        G.to(loop, {timeScale: 1 + Math.min(Math.abs(v)/300, 6), duration:.2, overwrite:true});
+        G.to(loop, {timeScale:1, duration:1.2, delay:.25, overwrite:false});
+        G.to(band, {skewX: G.utils.clamp(-10, 10, v/-250), rotation: baseRot, duration:.4, overwrite:true});
+      }});
+    });
+  } else if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); }, {rootMargin:'0px 0px 8% 0px', threshold:.12});
+    $$('.rv,.stg').forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- factory conveyor ---------- */
+  (function(){
+    var ins = $$('#fab .fin .fc'), outs = $$('#fab .fout .fc'), mach = $('#mach'), i = 0, t = null;
+    outs.forEach(function(o){ o.classList.add('on'); });
+    function tick(){
+      if(i === 0){ ins.forEach(function(x){ x.classList.remove('go'); }); outs.forEach(function(x){ x.classList.remove('on'); }); }
+      ins[i].classList.add('go');
+      var k = i;
+      setTimeout(function(){ mach.classList.remove('work'); void mach.offsetWidth; mach.classList.add('work'); }, 400);
+      setTimeout(function(){ outs[k].classList.add('on'); if(G) G.fromTo(outs[k], {scale:.7}, {scale:1, duration:.6, ease:'back.out(3)'}); }, 750);
+      i = (i+1) % ins.length;
+    }
+    if(!reduce) whenVisible($('#fab'), function(){ if(t) return; setTimeout(tick, 300); t = setInterval(tick, 1700); }, function(){ clearInterval(t); t=null; });
+  })();
+
+  /* ---------- Perfekt stepper ---------- */
+  var T = {}; $$('#scene [data-k]').forEach(function(el){ T[el.dataset.k] = el; });
+  var cap = $('#cap'), dots = $$('#dots i'), tense = $('#tense'), pkSay = $('#pkSay');
+  var caps = [
+    '<b>Präsens.</b> Поездку можно забронировать. lässt стоит вторым, buchen уходит в конец.',
+    '<b>Perfekt.</b> Нужен haben. hat занимает второе место, lassen уезжает в самый конец.',
+    '<b>Стоп.</b> Рука сама пишет gelassen. Здесь так нельзя. Рядом уже стоит инфинитив buchen.',
+    '<b>Ersatzinfinitiv.</b> ge- исчезает. Вместо Partizip ставим инфинитив lassen. В конце два инфинитива: buchen lassen.',
+    '<b>Запоминалка.</b> Die Reise hat sich buchen lassen. В придаточном hat прыгает перед ними: …, weil sich die Reise nicht hat buchen lassen.'
+  ];
+  var step = 5, auto = null;
+  function setStep(n){
+    var prev = step;
+    step = Math.max(1, Math.min(5, n));
+    T.t2a.hidden = step >= 2; T.t2b.hidden = step < 2; T.t5.hidden = step < 2;
+    T.t5.classList.toggle('warn', step === 3);
+    T.t5.classList.toggle('cut', step >= 4);
+    T.t5.classList.toggle('ok', step >= 4);
+    tense.textContent = step >= 2 ? 'Perfekt' : 'Präsens';
+    pkSay.dataset.say = step >= 4 ? 'Die Reise hat sich buchen lassen.' : 'Die Reise lässt sich buchen.';
+    dots.forEach(function(d,i){ d.classList.toggle('on', i < step); });
+    cap.innerHTML = caps[step-1];
+    if(G && !reduce){
+      G.fromTo(cap, {x:14}, {x:0, duration:.4, ease:'power2.out'});
+      if(step === 2 && prev !== 2){ G.fromTo([T.t2b, T.t5], {scale:.5, rotation:-8}, {scale:1, rotation:0, duration:.6, ease:'back.out(3)', stagger:.12}); }
+      if(step === 1){ G.fromTo(T.t2a, {scale:.5}, {scale:1, duration:.5, ease:'back.out(3)'}); }
+      if(step === 3){ G.fromTo(T.t5, {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); }
+      if(step === 4){ G.fromTo(T.t5, {scale:1.25, rotation:4}, {scale:1, rotation:0, duration:.7, ease:'elastic.out(1,.45)'}); }
+    }
+  }
+  function play(){ clearInterval(auto); setStep(1); auto = setInterval(function(){ if(step >= 5){ clearInterval(auto); return; } setStep(step+1); }, 2800); }
+  $('#next').onclick = function(){ clearInterval(auto); setStep(step+1); };
+  $('#prev').onclick = function(){ clearInterval(auto); setStep(step-1); };
+  $('#replay').onclick = play;
+  setStep(5);
+  var played = false;
+  if(!reduce) whenVisible($('#scene .pk'), function(){ if(!played){ played = true; play(); } });
+
+  /* ---------- flow diagrams ---------- */
+  function flow(el){
+    var scen = JSON.parse(el.dataset.flow), nodes = $$('.fn', el), nos = $$('.fno', el), fq = $('.fq', el), fa = $('.fans', el), si = 0, timers = [], running = false;
+    function clear(){ timers.forEach(clearTimeout); timers = []; }
+    function reset(){
+      nodes.forEach(function(n){ n.classList.remove('chk','hit','miss'); });
+      nos.forEach(function(n){ n.classList.remove('on'); });
+      fa.className = 'fans'; fa.textContent = '';
+    }
+    function run(){
+      reset(); var s = scen[si]; fq.textContent = s.t;
+      if(G) G.fromTo(fq, {y:-16, rotation:-4, scale:.9}, {y:0, rotation:0, scale:1, duration:.5, ease:'back.out(2.5)'});
+      for(var i=0;i<=s.hit;i++){
+        (function(i){
+          timers.push(setTimeout(function(){
+            nodes[i].classList.add('chk');
+            if(i < s.hit){ timers.push(setTimeout(function(){ nodes[i].classList.add('miss'); nos[i] && nos[i].classList.add('on'); }, 350)); }
+            else {
+              nodes[i].classList.add('hit');
+              var r = $('.res', nodes[i]);
+              fa.textContent = '→ ' + s.a; fa.classList.add('on');
+              if(G && r) G.fromTo(r, {scale:.5, rotation:12}, {scale:1.12, rotation:-3, duration:.6, ease:'elastic.out(1,.45)'});
+            }
+          }, 500 + i*800));
+        })(i);
+      }
+      timers.push(setTimeout(function(){ si = (si+1) % scen.length; if(running) run(); }, 500 + (s.hit+1)*800 + 2600));
+    }
+    (function(){ var s = scen[0]; for(var i=0;i<s.hit;i++){ nodes[i].classList.add('miss'); nos[i] && nos[i].classList.add('on'); } nodes[s.hit].classList.add('hit'); fa.textContent = '→ ' + s.a; fa.classList.add('on'); })();
+    if(!reduce) whenVisible(el, function(){ if(running) return; running = true; run(); }, function(){ running = false; clear(); }, .2);
+  }
+  $$('.flow[data-flow]').forEach(flow);
+
+  /* ---------- -bar builder ---------- */
+  (function(){
+    var W = [
+      ['', 'lös', 'bar', '', 'lösbar', 'можно решить'],
+      ['un', 'lös', 'bar', '', 'unlösbar', 'решить нельзя'],
+      ['', 'trink', 'bar', '', 'trinkbar', 'можно пить'],
+      ['', 'erreich', 'bar', '', 'erreichbar', 'можно дозвониться или доехать'],
+      ['un', 'heil', 'bar', '', 'unheilbar', 'не лечится'],
+      ['', 'verständ', 'lich', 'l', 'verständlich', 'можно понять'],
+      ['un', 'erklär', 'lich', 'l', 'unerklärlich', 'объяснить нельзя'],
+      ['', 'akzept', 'abel', 'a', 'akzeptabel', 'можно принять'],
+      ['in', 'akzept', 'abel', 'a', 'inakzeptabel', 'принять нельзя']
+    ];
+    var k = 0, U = $('#bUn'), B = $('#bBase'), E = $('#bEnd'), R = $('#bRes'), Gn = $('#bGen'), t = null;
+    function tick(){
+      k = (k+1) % W.length; var w = W[k];
+      U.textContent = w[0] || 'un'; U.classList.toggle('off', !w[0]);
+      B.textContent = w[1]; E.textContent = w[2]; E.className = 'be ' + w[3]; R.textContent = w[4]; Gn.textContent = w[5];
+      if(G){ G.fromTo(E, {y:-24, rotation:-20}, {y:0, rotation:0, duration:.5, ease:'back.out(3)'}); G.fromTo(R, {scale:.6}, {scale:1, duration:.5, ease:'back.out(3)', delay:.1}); if(w[0]) G.fromTo(U, {y:-20, rotation:12}, {y:0, rotation:0, duration:.5, ease:'back.out(3)'}); }
+    }
+    if(!reduce) whenVisible($('#build'), function(){ if(t) return; t = setInterval(tick, 1900); }, function(){ clearInterval(t); t=null; });
+  })();
+
+  /* ---------- converter ---------- */
+  (function(){
+    // ~ = word that leaves, * = new word
+    var S = [
+      {p:['Das Problem','~kann','~gelöst','~werden.'], ru:'Проблему можно решить.', o:{
+        lassen:['Das Problem','*lässt','*sich','lösen.'], zu:['Das Problem','*ist','*zu lösen.'], bar:['Das Problem','ist','*lösbar.'], man:['*Man','kann','das Problem','lösen.']}},
+      {p:['Der Text','~kann','nicht','~verstanden','~werden.'], ru:'Текст невозможно понять.', o:{
+        lassen:['Der Text','*lässt','*sich','nicht','verstehen.'], zu:['Der Text','*ist','nicht','*zu verstehen.'], bar:['Der Text','ist','*unverständlich.'], man:['*Man','kann','*den Text','nicht','verstehen.']}},
+      {p:['Der Fehler','~kann','schnell','~behoben','~werden.'], ru:'Ошибку можно быстро исправить.', o:{
+        lassen:['Der Fehler','*lässt','*sich','schnell','beheben.'], zu:['Der Fehler','*ist','schnell','*zu beheben.'], bar:['Der Fehler','ist','schnell','*behebbar.'], man:['*Man','kann','*den Fehler','schnell','beheben.']}}
+    ];
+    var NOTE = {
+      lassen:'lässt sich + инфинитив. Смысл «можно». С nicht выходит «нельзя».',
+      zu:'ist + zu + инфинитив. Здесь смысл «можно». Со сроком было бы «надо».',
+      bar:'Одно прилагательное. Отрицание через un-: unverständlich. Не каждый глагол даёт -bar, проверяй словарь.',
+      man:'Подлежащее становится Akkusativ: der Text → den Text. Глагол в активе.'
+    };
+    var LBL = {lassen:'sich lassen', zu:'sein + zu', bar:'-bar · -lich', man:'man + Aktiv'};
+    var si = 0, mi = 'lassen', IN = $('#cvIn'), OUT = $('#cvOut'), ru = $('#cvRu'), note = $('#cvNote'), lab = $('#cvLabel'), sayB = $('#cvSay'), mach = $('#cvMach');
+    function words(arr){ return arr.map(function(w){ var c = w[0]==='~' ? ' x' : w[0]==='*' ? ' nw' : ''; return '<span class="w'+c+'">' + w.replace(/^[~*]/,'') + '</span>'; }).join(''); }
+    function render(animate){
+      var s = S[si], o = s.o[mi];
+      IN.innerHTML = words(s.p); ru.textContent = s.ru;
+      OUT.innerHTML = words(o); note.textContent = NOTE[mi]; lab.textContent = LBL[mi];
+      sayB.dataset.say = o.map(function(w){ return w.replace(/^[~*]/,''); }).join(' ');
+      $$('#cvS button').forEach(function(b){ b.setAttribute('aria-pressed', +b.dataset.s === si); });
+      $$('#cvM button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.m === mi); });
+      IN.classList.remove('go');
+      if(animate && G && !reduce){
+        setTimeout(function(){ IN.classList.add('go'); }, 150);
+        G.fromTo(mach, {scale:.94}, {scale:1, duration:.5, ease:'back.out(3)', delay:.3});
+        G.from($$('.w', OUT), {y:-26, scale:.55, rotation:function(){ return G.utils.random(-10,10); }, duration:.5, ease:'back.out(2.4)', stagger:.07, delay:.45});
+      } else { IN.classList.add('go'); }
+    }
+    var touched = false, demo = null, order = ['lassen','zu','bar','man'];
+    $$('#cvS button').forEach(function(b){ b.onclick = function(){ touched = true; clearInterval(demo); si = +b.dataset.s; render(true); }; });
+    $$('#cvM button').forEach(function(b){ b.onclick = function(){ touched = true; clearInterval(demo); mi = b.dataset.m; render(true); }; });
+    render(false);
+    if(!reduce) whenVisible($('#conv-box'), function(){
+      if(touched || demo) return;
+      demo = setInterval(function(){
+        if(touched){ clearInterval(demo); return; }
+        var k = order.indexOf(mi) + 1; if(k >= order.length){ k = 0; si = (si+1) % S.length; }
+        mi = order[k]; render(true);
+      }, 3200);
+    }, function(){ clearInterval(demo); demo = null; });
+  })();
+
+  /* ---------- quiz ---------- */
+  var Q = [
+    {q:'Das Fenster ___ sich nicht öffnen.', o:['lässt','ist','wird'], c:0, x:'sich lassen: lässt sich + инфинитив. Окно невозможно открыть.'},
+    {q:'Die Reise hat sich problemlos buchen ___.', o:['gelassen','lassen','lässt'], c:1, x:'Ersatzinfinitiv. Рядом с другим инфинитивом ge- пропадает: buchen lassen.'},
+    {q:'Die Unterlagen sind bis Montag ___.', o:['zu abgeben','abzugeben','abgeben'], c:1, x:'Отделяемый глагол. zu встаёт внутрь: ab-zu-geben.'},
+    {q:'Das Treffen ist nicht zu vermeiden. Es ___ vermieden werden.', o:['kann nicht','darf nicht','muss nicht'], c:0, x:'nicht zu про невозможность. Встречи не избежать. darf nicht значило бы «избегать запрещено».'},
+    {q:'Die Aufgabe kann nicht gelöst werden. Sie ist ___.', o:['unlöslich','unlösbar','lösbar'], c:1, x:'unlösbar значит нерешаемая. löslich про сахар в чае, это «растворимый».'},
+    {q:'Der Fehler kann behoben werden. Man kann ___ Fehler beheben.', o:['der','dem','den'], c:2, x:'С man бывшее подлежащее становится Akkusativ: der Fehler → den Fehler.'}
+  ];
+  var qz = $('#qz'), qi = 0, res = [];
+  function bar(){ return '<div class="qbar">' + Q.map(function(_,i){ return '<i class="' + (res[i]===true?'ok':res[i]===false?'bad':i===qi?'cur':'') + '"></i>'; }).join('') + '</div>'; }
+  function drawQ(){
+    var it = Q[qi];
+    qz.innerHTML = bar() + '<p class="qn">Вопрос ' + (qi+1) + ' из ' + Q.length + '</p>' +
+      '<p class="qq" lang="de">' + it.q.replace('___','<u id="blank">___</u>') + '</p>' +
+      '<div class="qo" lang="de">' + it.o.map(function(o,i){ return '<button type="button" data-i="'+i+'">'+o+'</button>'; }).join('') + '</div>' +
+      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выбери вариант. В шпаргалку не подглядывай.</span></div>';
+    $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
+    if(G && !reduce) G.from($$('.qo button', qz), {y:20, scale:.9, duration:.5, ease:'back.out(2)', stagger:.06});
+  }
+  function burstConfetti(n){
+    if(!G || reduce) return;
+    var colors = ['#C6F53C','#FA0586','#7700FF','#00BDFF','#FFE81A','#FF6040'];
+    for(var i=0;i<n;i++){
+      var c = document.createElement('i'); c.className = 'conf'; c.style.background = colors[i%colors.length]; qz.appendChild(c);
+      G.fromTo(c, {x:0, y:0, rotation:0}, {x:G.utils.random(-260,260), y:G.utils.random(-220,160), rotation:G.utils.random(-540,540), opacity:0, duration:G.utils.random(1,1.8), ease:'power3.out', onComplete:(function(el){ return function(){ el.remove(); }; })(c)});
+    }
+  }
+  function answer(i){
+    var it = Q[qi], ok = i===it.c; res[qi] = ok;
+    $$('.qo button', qz).forEach(function(b){ b.disabled = true; var k=+b.dataset.i; if(k===it.c) b.classList.add('ok'); else if(k===i) b.classList.add('bad'); });
+    var chosen = $$('.qo button', qz)[i];
+    if(G && !reduce){ ok ? G.fromTo(chosen, {scale:.85}, {scale:1, duration:.6, ease:'elastic.out(1,.4)'}) : G.fromTo(chosen, {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); }
+    $('#blank').textContent = it.o[it.c];
+    var qx = $('#qx'); qx.classList.toggle('bad', !ok);
+    qx.innerHTML = '<svg class="ic"><use href="#i-' + (ok?'circle-check':'circle-x') + '"/></svg><span>' + (ok ? '<b>Верно.</b> ' : '<b>Мимо.</b> ') + it.x + '</span>';
+    if(ok) burstConfetti(10);
+    say(it.q.replace('___', it.o[it.c]));
+    $('.qbar', qz).outerHTML = bar();
+    var nb = document.createElement('button'); nb.className = 'btn lime qnext'; nb.type='button';
+    nb.innerHTML = qi < Q.length-1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.onclick = function(){ qi++; qi < Q.length ? drawQ() : done(); };
+    qz.appendChild(nb); nb.focus({preventScroll:true});
+  }
+  function done(){
+    var s = res.filter(Boolean).length;
+    var msg = s===6 ? 'Шесть из шести. werden можно отправлять в отпуск.' : s>=4 ? 'Почти. Перечитай блок про nicht zu и Perfekt. Там спотыкаются все.' : 'Первый раз у всех так. Пролистай шпаргалку и попробуй ещё раз.';
+    qz.innerHTML = bar() + '<div class="qres"><div class="score">'+s+'/6 <svg class="ic"><use href="#i-trophy"/></svg></div><p class="qq" style="margin-top:6px">'+msg+'</p>' +
+      '<div class="cta-row"><button type="button" class="btn lime" id="again"><svg class="ic"><use href="#i-repeat"/></svg> Ещё раз</button><a class="btn ghost wh" href="#cheat">Шпаргалка <svg class="ic"><use href="#i-arrow-right"/></svg></a></div></div>';
+    $('#again').onclick = function(){ qi = 0; res = []; drawQ(); };
+    if(G && !reduce){ G.from('.qres .score', {scale:.3, rotation:-20, duration:1, ease:'elastic.out(1,.4)'}); burstConfetti(s*8); }
+  }
+  drawQ();
+
+  if(G){ window.addEventListener('load', function(){ ScrollTrigger.refresh(); }); if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); }); }
+}
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', passivInit); else passivInit();
+</script>
+
+</body>
+</html>
